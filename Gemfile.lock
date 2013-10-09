@@ -62,6 +62,8 @@ GEM
       capybara (~> 2.1.0)
       minitest (~> 4.0)
       rake
+    minitest-focus (1.0.0)
+      minitest (~> 4.4)
     minitest-metadata (0.4.0)
       minitest (~> 4.7)
     minitest-rails (0.9.2)
@@ -130,6 +132,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
+  minitest-focus
   minitest-rails
   minitest-rails-capybara
   rails (= 3.2.14)

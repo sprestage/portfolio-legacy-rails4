@@ -65,8 +65,14 @@ module Portfolio
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
+    # To play around with these settings, use generate and destroy to create and destroy
+    #   controllers/helpers/etc for learning. --pretend flag can give you a preview.
+    #   eg.  rails generate controller Home --pretend
+    #   Also, since we are creating our own test framework, use -t false flag to keep tests
+    #   from being auto-generated.  -sprestage
     config.generators do |g|
-      g.test_framework :mini_test, :spec => true, :fixture => false
+      g.test_framework :mini_test, :spec => true
+      g.helper false
     end
   end
 end
