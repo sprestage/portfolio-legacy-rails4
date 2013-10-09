@@ -7,7 +7,7 @@ feature "CanAccessHome" do
     page.wont_have_content "Goodbye All!"
   end
 
-  scenario "something else" do
-    puts "you're not focused!"
-  end
+  # scenario "something else" do
+  #   puts "you're not focused!"
+  # end
 end
