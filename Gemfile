@@ -23,11 +23,14 @@ end
 
 group :development, :test do
   gem "minitest-rails"
+  gem "launchy"
+  gem "faker"
 end
 
 group :test do
   gem "minitest-rails-capybara"
   gem "minitest-focus"
+  gem "turn"
 end
 
 gem 'jquery-rails'

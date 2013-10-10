@@ -11,3 +11,7 @@ post02:
 post03:
  Title: May 26-27 2013 - She's Geeky un-conference
  Content: This is yet another sample blog post.
+
+post04:
+ Title: <%= Faker::name %>
+ Content: Some more posting stuff here.
