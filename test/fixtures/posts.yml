@@ -1,0 +1,13 @@
+# Create some data for the tests to use.
+
+post01:
+ Title: November 2012
+ Content: This is a sample blog post.
+
+post02:
+ Title: April 24-27 2013 - NorWesCon
+ Content: This is another sample blog post.
+
+post03:
+ Title: May 26-27 2013 - She's Geeky un-conference
+ Content: This is yet another sample blog post.
