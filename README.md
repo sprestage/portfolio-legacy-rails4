@@ -26,6 +26,10 @@ Week One
 - Guest speakers.  Catch up on work.
 
 ######October 10, 2013 (day 4)
+- Write a spec to check for bootstrap loading on root_path. 
+- Watch and do: http://railscasts.com/episodes/328-twitter-bootstrap-basics . Push your resulting app to Github.  
+NOTE: This item was the screaming nightmare that caused so much trouble for the class.  No submission occurred for 
+this item.
 
 ######October 9, 2013 (day 3)
 - This is the first big submission of my official Portfolio.  This implements the custom blog, where the posts can be created,
