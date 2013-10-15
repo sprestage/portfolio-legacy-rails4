@@ -46,3 +46,6 @@ pages.  Customize the HTML template.  Set up basic Rails routing.  Day two submi
 - Use BDD to get a basic Rails app up and running.  This is the temporary portfolio which I created as my_project instead
 of Portfolio.  See day one here: https://github.com/sprestage/my_project
 
+Links I use
+=======
+http://git-scm.com/book
