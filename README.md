@@ -9,21 +9,34 @@ Deployed
 ========
 This portfolio has been deployed to Heroku and can be found here: http://sprestage-portfolio.herokuapp.com
 
-Day by day
+Day by Day
 =======
-October 14, 2013
 
-October 10, 2013
+Week Two
+-------
 
-October 9, 2013
+######October 15, 2013 (day 7)
+
+######October 14, 2013 (day 6)
+
+Week One
+-------
+
+######October 11, 2013 (day 5)
+- Guest speakers.  Catch up on work.
+
+######October 10, 2013 (day 4)
+
+######October 9, 2013 (day 3)
 - This is the first big submission of my official Portfolio.  This implements the custom blog, where the posts can be created,
 updated, and deleted.  Use generator to create minitests.  Use scaffolding to generate posts.  Implement fixtures.  Day two
 submission is a link to the commits (to master, since there are no branches yet): https://github.com/sprestage/Portfolio/commits/master
 
-October 8, 2013
+######October 8, 2013 (day 2)
 - Create a new Rails 3 app with static pages.  Use minispec and capybara to BDD this.  Create a Home controllellr to handle the static
 pages.  Customize the HTML template.  Set up basic Rails routing.  Day two submitted here: https://github.com/sprestage/blog
 
-October 7, 2013
+######October 7, 2013 (day 1)
 - Use BDD to get a basic Rails app up and running.  This is the temporary portfolio which I created as my_project instead
 of Portfolio.  See day one here: https://github.com/sprestage/my_project
+
