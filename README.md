@@ -31,6 +31,8 @@ Week One
 - This is the first big submission of my official Portfolio.  This implements the custom blog, where the posts can be created,
 updated, and deleted.  Use generator to create minitests.  Use scaffolding to generate posts.  Implement fixtures.  Day two
 submission is a link to the commits (to master, since there are no branches yet): https://github.com/sprestage/Portfolio/commits/master
+- Assignment: https://canvas.instructure.com/courses/819381/assignments/2459531
+- Workflowy: https://workflowy.com/shared/294a15ce-d4e5-ea9f-297a-520ecb6fcf3e/
 
 ######October 8, 2013 (day 2)
 - Create a new Rails 3 app with static pages.  Use minispec and capybara to BDD this.  Create a Home controllellr to handle the static
