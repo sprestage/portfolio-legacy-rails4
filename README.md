@@ -33,6 +33,10 @@ this item.
 - Implemented and mildly customized bootstrap.
 - Assignment: https://canvas.instructure.com/courses/819381/assignments/2459533
 - Workflowy: https://workflowy.com/shared/77df04e8-3c08-1031-fab9-472b482365ca/#
+QUESTION: Add additional spec that is modification of home page spec, but checks instead against your public domain name.
+I had trouble with this.  I could see how to set up (free trial or paid) accounts on pingdom.com (to automate pinging of your 
+site) and pingtest.net to ping the machine you are on right now.  But not how to set up my own test for this.
+
 
 ######October 9, 2013 (day 3)
 - This is the first big submission of my official Portfolio.  This implements the custom blog, where the posts can be created,

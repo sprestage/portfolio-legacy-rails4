@@ -111,7 +111,7 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url(../img/bg.JPG) no-repeat center center fixed; 
+  background: url(../img/ranchPic1.JPG) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -144,7 +144,7 @@ i.service-icon {
   width: 140px;
   height: 140px;
   line-height: 136px;
-  vertical-align: middle; 
+  vertical-align: middle;
   text-align: center;
 }
 
@@ -159,7 +159,7 @@ i.service-icon:hover {
   display: table;
   height: 400px;
   width: 100%;
-  background: url(../img/section-two.JPG) no-repeat center center fixed; 
+  background: url(../img/section-two.JPG) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
