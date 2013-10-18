@@ -7,14 +7,17 @@ gem "minitest-rails"
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # gem 'sqlite3'
-gem "pg"
+gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
+gem 'sass-rails', '>= 3.2' # sass-rails needs to be higher than 3.2
+gem 'bootstrap-sass', '~> 2.3.2.1'
+  # gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-  gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass'
+  # gem 'bootstrap-sass', github:'thomas-mcdonald/bootstrap-sass'
+  # gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
