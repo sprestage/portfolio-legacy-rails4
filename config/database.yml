@@ -29,7 +29,7 @@ test:
   encoding: unicode
   database: portfolio-test
   host: localhost
-  # username: admin
+  username: postgres
   # password: admin
   # adapter: sqlite3
   # database: db/test.sqlite3
