@@ -6,7 +6,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: portfolio-dev
+  database: portfolio_dev
   # username: susan
   # username: admin
   # password: admin
@@ -27,7 +27,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: portfoliotest
+  database: portfolio_test
   host: localhost
   username: postgres
   # password: admin
@@ -37,3 +37,17 @@ test:
   # timeout: 5000
   # host: localhost
   # port: 5433
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: portfolio_prod
+  # username: susan
+  # username: admin
+  # password: admin
+  # pool: 5
+  # timeout: 5000
+  # host: localhost
+  # port: 5433
+
+
