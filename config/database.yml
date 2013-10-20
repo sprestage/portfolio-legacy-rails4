@@ -27,7 +27,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: db/portfolio_test
+  database: portfolio_test
   host: localhost
   username: postgres
   # password: admin
