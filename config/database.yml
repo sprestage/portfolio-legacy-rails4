@@ -6,7 +6,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: portfolio_dev
+  database: db/portfolio_dev
   # username: susan
   # username: admin
   # password: admin
@@ -27,7 +27,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: portfolio_test
+  database: db/portfolio_test
   host: localhost
   username: postgres
   # password: admin
@@ -41,7 +41,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: portfolio_prod
+  database: db/portfolio_prod
   # username: susan
   # username: admin
   # password: admin
