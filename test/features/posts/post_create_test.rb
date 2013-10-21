@@ -27,7 +27,7 @@ end
 
 # Here is the good way to write the Create Post test
 feature "Creating a post" do
-  scenario "submit form data to create a new post" do
+  scenario "submit form data to create a new post using fixtures" do
     # Given a completed new post form
     visit new_post_path
     fill_in "Title", with: posts(:post01).title
