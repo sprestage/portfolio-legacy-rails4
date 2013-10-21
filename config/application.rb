@@ -65,6 +65,9 @@ module Portfolio
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
+    # Disable database initialization for Heroku deploy
+    config.assets.initialize_on_precompile = false
+
     # To play around with these settings, use generate and destroy to create and destroy
     #   controllers/helpers/etc for learning. --pretend flag can give you a preview.
     #   eg.  rails generate controller Home --pretend
