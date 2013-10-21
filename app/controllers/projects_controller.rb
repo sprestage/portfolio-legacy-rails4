@@ -17,7 +17,7 @@ class ProjectsController < ApplicationController
       flash[:notice] = "Project was successfully created."
       redirect_to @project
     else
-      # tbd
+      render :new
     end
   end
 end
