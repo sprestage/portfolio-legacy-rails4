@@ -1,11 +1,11 @@
 # Create some data for the tests to use.
 
 project01:
- name: Geeky Mama Mare Blog
+ name: Geeky Mama Mare Blog Project
  technologies_used: Rails, Ruby, Bootstrap, HTML5, CSS3
 
 project02:
- name: The Unofficial Trakehner Database
+ name: The Unofficial Trakehner Database Project
  technologies_used: Rails4, Ruby2, Bootstrap, HTML4, CSS3
 
 project03:

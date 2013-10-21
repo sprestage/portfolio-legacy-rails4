@@ -13,3 +13,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore temp files that I create for my own use.
+/temp*
+/.temp*
