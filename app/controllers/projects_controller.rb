@@ -20,4 +20,30 @@ class ProjectsController < ApplicationController
       render :new
     end
   end
+
+  def edit
+    @project = Project.find(params[:id])
+  end
+
+  def update
+    @project = Project.find(params[:id])
+
+    if @project.update_attributes(params[:project])
+      redirect_to @project, notice: 'Project was successfully updated.'
+    else
+      render :edit
+    end
+
+    # respond_to do |format|
+    #   if @project.update_attributes(params[:project])
+    #     format.html { redirect_to @project, notice: 'Project was successfully updated.' }
+    #     format.json { head :no_content }
+    #   else
+    #     format.html { render action: "edit" }
+    #     format.json { render json: @projet.errors, status: :unprocessable_entity }
+    #   end
+    # end
+
+  end
+
 end

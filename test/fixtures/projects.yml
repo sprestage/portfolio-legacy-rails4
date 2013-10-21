@@ -1,0 +1,14 @@
+# Create some data for the tests to use.
+
+project01:
+ name: Geeky Mama Mare Blog
+ technologies_used: Rails, Ruby, Bootstrap, HTML5, CSS3
+
+project02:
+ name: The Unofficial Trakehner Database
+ technologies_used: Rails4, Ruby2, Bootstrap, HTML4, CSS3
+
+project03:
+ name: <%= Faker::name %>
+ technologies_used: Some more project stuff here.
+
