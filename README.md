@@ -91,3 +91,7 @@ them, so here they are:
   * Rails Deployment, Theming, and Continuous Integration https://workflowy.com/shared/77df04e8-3c08-1031-fab9-472b482365ca/
 * Day 3: 
   * Rails Resources https://workflowy.com/shared/294a15ce-d4e5-ea9f-297a-520ecb6fcf3e/
+* Day 2:
+  * Rails Best Practices https://workflowy.com/shared/7695156e-638f-4c96-5362-b616a89625e6/
+* Day 1:
+  * TDD & BDD - Understanding Testing https://workflowy.com/shared/e4a115b7-66b3-26dc-2088-55dd0ed81f94/
