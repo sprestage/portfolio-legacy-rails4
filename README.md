@@ -64,20 +64,30 @@ These are the day by day workflowy links, since I seem to keep wanting them and 
 them, so here they are:
 
 ##### Week 3
-- Day 15:
-- Day 14:
-- Day 13:
-- Day 12: Polymorphic Comments https://workflowy.com/shared/131de828-e96a-3436-3f43-c5d066b2afd9/
-- Day 11: Rails Resource Generator OmniAuth https://workflowy.com/shared/3c5aeda2-1eb3-e9d2-ac46-a3ddd5affc6c/
+* Day 15:
+* Day 14:
+* Day 13:
+* Day 12: 
+  * Polymorphic Comments https://workflowy.com/shared/131de828-e96a-3436-3f43-c5d066b2afd9/
+* Day 11: 
+  * Rails Resource Generator OmniAuth https://workflowy.com/shared/3c5aeda2-1eb3-e9d2-ac46-a3ddd5affc6c/
 
 ##### Week 2
-- Day 10: Tech Talks
-- Day 9: Add Rails Auth to Portfolio https://workflowy.com/shared/8b911380-129f-b3dc-fc22-c338c35d7f64/ & SimpleCov https://canvas.instructure.com/courses/819381/assignments/2460094 & Collaborative Q&A site https://canvas.instructure.com/courses/819381/assignments/2472409
-- Day 8: No workflowy, A "How-To: Site https://canvas.instructure.com/courses/819381/assignments/2472408
-- Day 7: Rails Authentication https://workflowy.com/shared/63622fe3-65fd-190c-35d4-f01352b72802/
-- Day 6: Rails MVC Breakdown https://workflowy.com/shared/5ef000a1-0ab8-0ce1-710b-88b8c0b7937b/
+* Day 10: Tech Talks
+* Day 9: 
+  * Add Rails Auth to Portfolio https://workflowy.com/shared/8b911380-129f-b3dc-fc22-c338c35d7f64/
+  * N/W, SimpleCov https://canvas.instructure.com/courses/819381/assignments/2460094
+  * N/W, Collaborative Q&A site https://canvas.instructure.com/courses/819381/assignments/2472409
+* Day 8: 
+  * N/W, A "How-To: Site https://canvas.instructure.com/courses/819381/assignments/2472408
+* Day 7: 
+  * Rails Authentication https://workflowy.com/shared/63622fe3-65fd-190c-35d4-f01352b72802/
+* Day 6: 
+  * Rails MVC Breakdown https://workflowy.com/shared/5ef000a1-0ab8-0ce1-710b-88b8c0b7937b/
 
 ##### Week 1
-- Day 5: Tech Talks
-- Day 4: Rails Deployment, Theming, and Continuous Integration https://workflowy.com/shared/77df04e8-3c08-1031-fab9-472b482365ca/
-- Day 3: Rails Resources https://workflowy.com/shared/294a15ce-d4e5-ea9f-297a-520ecb6fcf3e/
+* Day 5: Tech Talks
+* Day 4: 
+  * Rails Deployment, Theming, and Continuous Integration https://workflowy.com/shared/77df04e8-3c08-1031-fab9-472b482365ca/
+* Day 3: 
+  * Rails Resources https://workflowy.com/shared/294a15ce-d4e5-ea9f-297a-520ecb6fcf3e/
