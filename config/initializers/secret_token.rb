@@ -4,4 +4,8 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Portfolio::Application.config.secret_token = ENV['RAILS_SECRET']
+Portfolio::Application.config.secret_token = if Rails.env.development? or Rails.env.test?
+    ('x' * 30) # meets minimum requirement of 30 chars long
+  else
+    ENV['RAILS_SECRET']
+  end
