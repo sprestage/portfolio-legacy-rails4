@@ -67,6 +67,9 @@ GEM
     execjs (2.0.2)
     faker (1.2.0)
       i18n (~> 0.5)
+    figaro (0.7.0)
+      bundler (~> 1.0)
+      rails (>= 3, < 5)
     hashie (2.0.5)
     hike (1.2.3)
     i18n (0.6.5)
@@ -192,6 +195,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
   faker
+  figaro
   jquery-rails
   launchy
   minitest (> 4.0)

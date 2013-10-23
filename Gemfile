@@ -31,6 +31,7 @@ group :development, :test do
   gem 'pry-doc'
   gem 'pry-debugger'
   gem 'faker'
+  gem 'figaro'
 end
 
 group :test do

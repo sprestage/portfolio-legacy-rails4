@@ -15,5 +15,8 @@
 /tmp
 
 # Ignore temp files that I create for my own use.
-/temp*
-/.temp*
+/*temp*
+/.*temp*
+
+# Ignore the secret keys stored (thanks to Figaro) in the environment variables.
+/config/application.yml
