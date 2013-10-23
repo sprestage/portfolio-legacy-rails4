@@ -3,50 +3,44 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'rails', '3.2.14'
-gem "minitest-rails"
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-# gem 'sqlite3'
 gem 'pg'
+gem 'devise'
+gem 'omniauth'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-gem 'sass-rails', '>= 3.2' # sass-rails needs to be higher than 3.2
-gem 'bootstrap-sass', '~> 2.3.2.1'
-  # gem 'sass-rails',   '~> 3.2.3'
+  gem 'sass-rails', '>= 3.2' # sass-rails needs to be higher than 3.2
+  gem 'bootstrap-sass', '~> 2.3.2.1'
   gem 'coffee-rails', '~> 3.2.1'
-  # gem 'bootstrap-sass', github:'thomas-mcdonald/bootstrap-sass'
-  # gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
   gem 'uglifier', '>= 1.0.3'
 end
 
 group :production do
-  gem "rails_12factor"
+  gem 'rails_12factor'
 end
 
 group :development, :test do
-  gem "minitest-rails"
-  gem "launchy"
-  gem "faker"
+  gem 'minitest', '> 4.0'
+  gem 'minitest-rails'
+  gem 'minitest-rails-capybara'
+  gem 'launchy'
+  gem 'minitest-focus'
+  gem 'minitest-colorize'
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-debugger'
+  gem 'faker'
 end
 
 group :test do
-  gem "minitest-rails-capybara"
-  gem "minitest-focus"
-  gem "turn"
+  gem 'turn'
 end
 
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
