@@ -14,7 +14,23 @@ feature "As a visitor, I want to sign out when I'm done." do
     # When I click log out.
     click_on 'Log Out'
     # Then I should see the logged out message
-    page.must_have_content "Signed out successfully"
+    page.text.must_include "Signed out successfully"
     page.wont_have_content "Log Out"
   end
+
+  scenario "signed in user is successfully signed out using fixtures" do
+    # Given a user is logged in
+    visit new_user_session_path
+    fill_in 'Email', with: users(:user_one).email
+    fill_in 'Password', with: 'password'
+    click_on 'Sign in'
+    page.text.must_include "Signed in successfully"
+    page.wont_have_content "Invalid email or password"
+    # When I click log out.
+    click_on 'Log Out'
+    # Then I should see the logged out message
+    page.text.must_include "Signed out successfully"
+    page.wont_have_content "Log Out"
+  end
+
 end
