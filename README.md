@@ -75,7 +75,7 @@ them, so here they are:
 ##### Week 2
 * Day 10: Tech Talks
 * Day 9: 
-  * Add Rails Auth to Portfolio https://workflowy.com/shared/8b911380-129f-b3dc-fc22-c338c35d7f64/
+  * Add Rails Authorization to Portfolio https://workflowy.com/shared/8b911380-129f-b3dc-fc22-c338c35d7f64/
   * N/W, SimpleCov https://canvas.instructure.com/courses/819381/assignments/2460094
   * N/W, Collaborative Q&A site https://canvas.instructure.com/courses/819381/assignments/2472409
 * Day 8: 
