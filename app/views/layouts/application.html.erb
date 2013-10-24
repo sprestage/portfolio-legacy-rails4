@@ -35,7 +35,8 @@
                 Logged in as <%= current_user.email %>
                 <%= link_to "Log Out", signout_path %>
               <% else %>
-                <%= link_to "Sign Up", signup_path %>
+                <%= link_to "Sign Up", signup_path %> or
+                <%= link_to "Log In", signin_path %>
               <% end %>
             </div>
 

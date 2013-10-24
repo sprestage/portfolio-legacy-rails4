@@ -1,13 +1,10 @@
 require "test_helper"
 
-feature "As a site owner, I want to sign out a user" do
+feature "As a visitor, I want to sign out when I'm done." do
   scenario "signed in user is successfully signed out" do
     # Given a user is logged in
     visit root_path
     click_on 'Sign Up'
-    # fill_in 'Email', with: 'user@example.com'
-    # fill_in 'Password', with: '12341234'
-    click_on 'Sign up'
     fill_in 'Email', with: 'user@example.com'
     fill_in 'Password', with: '12341234'
     fill_in 'Password confirmation', with: '12341234'
