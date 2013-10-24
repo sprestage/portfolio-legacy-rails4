@@ -30,10 +30,22 @@
       <div class="container">
         <div class="row">
           <div class"col-lg-12">
+            <div id="user_header">
+              <% if current_user %>
+                Logged in as <%= current_user.email %>
+                <%= link_to "Log Out", signout_path %>
+              <% else %>
+                <%= link_to "Sign Up", signup_path %>
+              <% end %>
+            </div>
+
+            <% flash.each do |name, msg| %>
+              <%= content_tag :div, msg, id: "flash_#{name}" %>
+            <% end %>
 
             <%= yield %>
             <hr>
-          </div>
+          </div><!-- /.col -->
         </div><!-- /.row  -->
       </div><!-- /.container -->
     </div><!-- /.section-colored -->

@@ -3,11 +3,15 @@ require "test_helper"
 feature "As a site owner, I want to sign up a new user" do
   scenario "new user is successfully created" do
     # Given a completed new user form
-    visit new_user_registration_path
+    visit root_path
+    click_on 'Sign Up'
+    # When I submit the form with valid data
+    # fill_in 'Email', with: 'user@example.com'
+    # fill_in 'Password', with: '12341234'
+    click_on 'Sign up'
     fill_in 'Email', with: 'user@example.com'
     fill_in 'Password', with: '12341234'
     fill_in 'Password confirmation', with: '12341234'
-    # When I submit the form
     click_on 'Sign up'
     # Then I should see the new user created success message
     page.must_have_content "Welcome! You have signed up successfully"
@@ -16,15 +20,15 @@ feature "As a site owner, I want to sign up a new user" do
 
   # scenario "new user is successfully created using faker" do
   #   # Given a completed new user form
-  #   visit users_path
+  #   visit new_user_registration_path
   #   click_on 'Sign Up'
   #   fill_in 'Email', with: users(:user01).email
-  #   fill_in 'Password', with: users(:user01).password
-  #   fill_in 'Password confirmation', with: users(:user01).password_confirmation
+  #   fill_in 'Password', with: users(:user01).encrypted_password
+  #   # fill_in 'Password confirmation', with: users(:user01).password_confirmation
   #   # When I submit the form
-  #   click_on 'Sign Up'
+  #   click_on 'Sign up'
   #   # Then I should see the new user created success message
-  #   page.must_have_content "Thank you for signing up"
+  #   page.must_have_content "Welcome! You have signed up successfully"
   # end
 
   # scenario "new user is logged in automatically when successfully created" do

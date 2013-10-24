@@ -5,8 +5,10 @@ Portfolio::Application.routes.draw do
   # get 'login', to: 'sessions#new', as: 'login'
   # get 'logout', to: 'sessions#destroy', as: 'logout'  # NOTE: this 'get' should be a 'delete'
   devise_scope :user do
-    get "sign_up", :to => "devise/sessions#new"
+    get "signup", :to => "devise/sessions#new"
+    get "signout", :to => "devise/sessions#destroy"
   end
+
 
   resources :posts
   resources :projects

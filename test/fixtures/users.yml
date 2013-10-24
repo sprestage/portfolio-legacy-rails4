@@ -1,0 +1,5 @@
+# Create some data for the tests to use.
+
+user01:
+ email: user01@example.com
+ encrypted_password: <%= User.new.send(:password_digest, 'password') %>
