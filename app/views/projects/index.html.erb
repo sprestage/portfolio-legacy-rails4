@@ -1,3 +1,7 @@
+<div class="section-colored text-center">
+  <h1 {text-align:center}>Listing projects</h1>
+</div>
+
 <% @projects.each do |project| %>
   <div class="project" id="<%= dom_id(project) %>">
     <h3><%= project.name %></h3>
@@ -11,4 +15,6 @@
 <% end %>
 
 <br />
+<div class="section-colored text-center">
 <%= link_to 'New Project', new_project_path %>
+</div>
