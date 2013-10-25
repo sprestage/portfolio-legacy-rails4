@@ -23,18 +23,19 @@
 
   <body>
 
-    <%= render 'layouts/header' %>
-
     <div class="section-colored text-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
+            <br><br>
             <%= yield %>
             <hr>
           </div>
         </div><!-- /.row -->
       </div><!-- /.container -->
     </div><!-- /.section-colored -->
+
+    <%= render 'layouts/header' %>
 
     <%= render 'layouts/side_menu' %>
 

@@ -10,6 +10,17 @@
   <%= @post.content %>
 </p>
 
+<!-- TODO: How do I get the @post.author.email to display correctly?
+      trying with this syntax gets a "undefined method `email' for nil:NilClass"
+      when rendering in the browser.  Interestingly, rake runs just fine -sprestage -->
+<p>
+  <b>Author:</b>
+  <%=  %>
+</p>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
+<% if current_user %>
+  Logged in as <%= current_user.email %>
+  <%= link_to 'Edit', edit_post_path(@post) %>
+<% end %>
+
 <%= link_to 'Back', posts_path %>

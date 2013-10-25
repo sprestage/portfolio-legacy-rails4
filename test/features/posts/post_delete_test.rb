@@ -4,6 +4,7 @@ feature "deleting a post" do
   scenario "works with valid data" do
 
     # Given a completed edit form
+    sign_in
     visit posts_path
     click_on 'New Post'
     fill_in 'Title', with: posts(:post01).title

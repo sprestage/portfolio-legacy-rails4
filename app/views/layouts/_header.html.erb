@@ -9,7 +9,12 @@
               <% flash.each do |name, msg| %>
                 <%= content_tag :div, msg, id: "flash_#{name}" %>
               <% end %>
-            </div>
+
+<!--               <% if current_user %>
+                Logged in as <%= current_user.email %>
+                <%= link_to "Sign Out", signout_path %>
+              <% end %>
+ -->            </div>
             </div>
           </div><!-- /.col -->
         </div><!-- /.row  -->

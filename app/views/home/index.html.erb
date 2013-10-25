@@ -1,3 +1,8 @@
+<div id="top" class="header">
+  <h3><%= link_to "Posts", posts_path %></h3>
+  <h3><%= link_to "Projects", projects_path %></h3>
+</div>
+
 <h1>Hello Code Fellows!</h1>
 
 <div class="container">
@@ -5,18 +10,16 @@
     <div class"col-lg-12">
       <div id="user_header">
         <div class="nav">
+          <!-- TODO: Remove this if..end once day 7 is complete. -->
           <% if current_user %>
             Logged in as <%= current_user.email %>
             <%= link_to "Sign Out", signout_path %>
-          <% else %>
+          <% end %>
+
+          <% if !current_user %>
             <%= link_to "Sign In", new_user_session_path %> or
             <%= link_to "Sign Up", new_user_registration_path %>
           <% end %>
-
-          <% flash.each do |name, msg| %>
-            <%= content_tag :div, msg, id: "flash_#{name}" %>
-          <% end %>
-
         </div>
       </div>
     </div><!-- /.col -->

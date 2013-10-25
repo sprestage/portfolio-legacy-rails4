@@ -4,6 +4,7 @@ feature "updating a post" do
   scenario "works with valid data" do
 
     # Given an existing post
+    sign_in
     visit posts_path
     click_on 'New Post'
     fill_in 'Title', with: posts(:post02).title
