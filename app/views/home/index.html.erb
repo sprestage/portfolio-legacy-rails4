@@ -1,2 +1,25 @@
 <h1>Hello Code Fellows!</h1>
-<p>This is an example welcome page.  This page is not expected to be displayed.</p>
+
+<div class="container">
+  <div class="row">
+    <div class"col-lg-12">
+      <div id="user_header">
+        <div class="nav">
+          <% if current_user %>
+            Logged in as <%= current_user.email %>
+            <%= link_to "Sign Out", signout_path %>
+          <% else %>
+            <%= link_to "Sign In", new_user_session_path %> or
+            <%= link_to "Sign Up", new_user_registration_path %>
+          <% end %>
+
+          <% flash.each do |name, msg| %>
+            <%= content_tag :div, msg, id: "flash_#{name}" %>
+          <% end %>
+
+        </div>
+      </div>
+    </div><!-- /.col -->
+  </div><!-- /.row  -->
+</div><!-- /.container -->
+

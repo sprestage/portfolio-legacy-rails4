@@ -1,0 +1,17 @@
+  <div class="section-colored text-center">
+
+      <div class="container">
+        <div class="row">
+          <div class"col-lg-12">
+            <div id="user_header">
+              <div class="nav">
+              <br><br>
+              <% flash.each do |name, msg| %>
+                <%= content_tag :div, msg, id: "flash_#{name}" %>
+              <% end %>
+            </div>
+            </div>
+          </div><!-- /.col -->
+        </div><!-- /.row  -->
+      </div><!-- /.container -->
+</div>
