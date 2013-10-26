@@ -65,7 +65,7 @@ QUESTION: Add additional spec that is modification of home page spec, but checks
 name.  I had trouble with this.  I could see how to set up (free trial or paid) accounts on pingdom.com (to automate 
 pinging of your site) and pingtest.net to ping the machine you are on right now.  But not how to set up my own test 
 for this.
-- Implement <b>create, update, delete posts in personal Portfolio, Day 3: Rails Resources</b>
+- Implement <b>create, update, delete posts</b> in personal Portfolio, Day 3: Rails Resources
 
 
 ######October 9, 2013 (day 3)
