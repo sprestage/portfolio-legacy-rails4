@@ -12,10 +12,38 @@ This portfolio has been deployed to Heroku and can be found here: http://spresta
 Day by Day
 =======
 
+Week Three
+-------
+
+######October 25, 2013 (day 15)
+- Guest speaker, Starr from HoneyBadger.io.
+
+######October 24, 2013 (day 14) 
+- Implement <b>authorship</b>.  This links posts to authors(users), using a one (belongs_to) to many (has_many) relationship.
+
+######October 23, 2013 (day 13)
+- Implement <b>user sign up, sign out, sign in</b> with Devise on personal Portfolio (Day 7: Rails Authentication with Devise)
+
+######October 22, 2013 (day 12)
+
+######October 21, 2013 (day 11)
+- Implement <b>show, show index, create, edit, delete projects</b> in personal Portfolio (Day 6: Rails MVC Breakdown)
+
 Week Two
 -------
 
+######October 18, 2013 (day 10)
+- Guest speakers. Brent on keeping lists to keep organized.  Lindsey on using Asana to keep organized.  Financial 
+ advisor on overall financial planning, saving, etc.
+- Implement Travis, postgres, and Heroku continuous integration on personal Portfolio and class project Trakehner DB.
+
+######October 17, 2013 (day 9)
+- Fighting with postgres
+
+######October 16, 2013 (day 8)
+
 ######October 15, 2013 (day 7)
+- Finally finish implementing twitter bootstrap
 
 ######October 14, 2013 (day 6)
 
@@ -37,6 +65,7 @@ QUESTION: Add additional spec that is modification of home page spec, but checks
 name.  I had trouble with this.  I could see how to set up (free trial or paid) accounts on pingdom.com (to automate 
 pinging of your site) and pingtest.net to ping the machine you are on right now.  But not how to set up my own test 
 for this.
+- Implement <b>create, update, delete posts in personal Portfolio</b>
 
 
 ######October 9, 2013 (day 3)
