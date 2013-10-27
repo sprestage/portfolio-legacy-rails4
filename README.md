@@ -16,7 +16,8 @@ Week Three
 -------
 
 ######October 25, 2013 (day 15)
-- Guest speaker, Starr from HoneyBadger.io.  Implemented <b>nested resources</b> over the weekend.
+- Guest speaker, Starr from HoneyBadger.io.  Implemented <b>nested resources</b> over the weekend.  See github readme for
+implementation details: https://github.com/sprestage/MyLists/blob/master/README.md
 
 ######October 24, 2013 (day 14) 
 - Implement <b>authorship</b>.  This links posts to authors(users), using a one (belongs_to) to many (has_many) relationship.
