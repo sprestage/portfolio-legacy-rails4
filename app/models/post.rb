@@ -1,6 +1,6 @@
 class Post < ActiveRecord::Base
   # TODO: this line was absent in the example posts.rb on Mon, 10/21. For learning about scope
-  attr_accessible :content, :title
+  attr_accessible :content, :title, :published
 
   belongs_to :author, class_name: "User"
 
@@ -21,4 +21,8 @@ class Post < ActiveRecord::Base
   #   save!
   # end
 
+  def publish!
+    published = true
+    save!
+  end
 end

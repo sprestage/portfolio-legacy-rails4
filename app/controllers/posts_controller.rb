@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
   before_filter :authenticate_user!, except: [:index, :show]
+  after_filter :verify_policy_scoped, :only => :index
+
   # GET /posts
   # GET /posts.json
   def index
@@ -42,6 +44,7 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(params[:post])
+    authorize @post
 
     respond_to do |format|
       if @post.save
@@ -82,4 +85,12 @@ class PostsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def publish
+    @post = Post.find(params[:id])
+    authorize @post, :update?
+    @post.publish!
+    redirect_to @post
+  end
+
 end
