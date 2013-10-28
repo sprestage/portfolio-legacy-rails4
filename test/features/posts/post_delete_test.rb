@@ -6,11 +6,6 @@ feature "deleting a post" do
     # Given a completed edit form
     sign_in
     visit posts_path
-    click_on 'New Post'
-    fill_in 'Title', with: posts(:post01).title
-    fill_in 'Content', with: posts(:post01).content
-    click_on 'Create Post'
-    click_on 'Back'
 
     # When I submit the form
     page.find("tr:last").click_on "Destroy"
@@ -29,7 +24,10 @@ feature "deleting a post" do
     # find_button('OK').click
 
     # And the post is no longer present
-    page.wont_have_content 'post to be deleted'
+    # TODO: This won't check for anything meaningful.  Rewrite the final checking.
+    page.text.must_include 'November 2012'
+    page.text.must_include 'April 24-27 2013 - NorWesCon'
+    page.wont_have_content 'GeekGirlCon'
 
   end
 end

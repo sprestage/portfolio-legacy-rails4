@@ -20,3 +20,8 @@
 
 # Ignore the secret keys stored (thanks to Figaro) in the environment variables.
 /config/application.yml
+
+# Uncomment this in a couple days.  Sharing the data with CodeFellows for now.
+/coverage
+
+/test/features/.DS_Store

@@ -16,11 +16,6 @@ post03:
  author: user_two
 
 post04:
- title: <%= Faker::name %>
- content: Some more posting stuff here.
- author: user_one
-
-post05:
  title: October 19-20 2013 - GeekGirlCon
  content: Still another sample blog post.
  author: author
