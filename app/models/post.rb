@@ -2,6 +2,11 @@ class Post < ActiveRecord::Base
   # TODO: this line was absent in the example posts.rb on Mon, 10/21. For learning about scope
   attr_accessible :content, :title, :published
 
+  validates :title, :content, presence: true
+  validates :title, length: { in: 2..255 }
+  validates :content, length: { in: 3..255 }
+
+
   belongs_to :author, class_name: "User"
   # scope published, where(published: true)
 
@@ -22,8 +27,9 @@ class Post < ActiveRecord::Base
   #   save!
   # end
 
-  def publish!
-    published = true
-    save!
-  end
+
+  # def publish!
+  #   published = true
+  #   save!
+  # end
 end

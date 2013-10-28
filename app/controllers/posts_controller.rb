@@ -89,9 +89,18 @@ class PostsController < ApplicationController
 
   def publish
     @post = Post.find(params[:id])
-    authorize @post, :update?
-    @post.publish!
-    redirect_to @post
+    authorize @post
+
+    @post.update_attributes(published: !@post.published)
+
+    redirect_to posts_path
   end
+
+  # def publish
+  #   @post = Post.find(params[:id])
+  #   authorize @post, :update?
+  #   @post.publish!
+  #   redirect_to @post
+  # end
 
 end

@@ -10,7 +10,12 @@ Portfolio::Application.routes.draw do
     # get "signin", :to => "devise/sessions#new"
   end
 
-  resources :posts
+  resources :posts do
+    member do
+      put 'publish'
+    end
+  end
+
   resources :projects
 
   root :to => 'home#index'

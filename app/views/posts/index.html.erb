@@ -15,12 +15,28 @@
       <td><%= post.title %></td>
       <td><%= post.content %></td>
       <td><%= link_to 'Show', post %></td>
+
       <% if policy(post).update? %>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
       <% end %>
+
       <% if policy(post).destroy? %>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       <% end %>
+
+      <% if policy(post).publish? %>
+        <% if post.published? %>
+          <td><%= link_to 'Unpublish', publish_post_path(post), {method: :put} %></td>
+        <% else %>
+          <td><%= link_to 'Publish', publish_post_path(post), {method: :put} %></td>
+        <% end %>
+      <% end %>
+
+
+<!--       <% if policy(post).publish? %>
+        <td><%= link_to 'Publish', post, method: :publish %></td>
+      <% end %>
+ -->
     </tr>
   <% end %>
 </table>

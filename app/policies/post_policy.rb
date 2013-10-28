@@ -36,4 +36,12 @@ class PostPolicy < ApplicationPolicy
   def destroy?
     user.editor? if user.present?
   end
+
+  def publish?
+    user && (user.editor?)
+  end
+
+  # def publish?
+  #   (@post.published == true) || (user.editor? if user.present?)
+  # end
 end
