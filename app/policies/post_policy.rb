@@ -5,7 +5,6 @@ class PostPolicy < ApplicationPolicy
         scope.all
       elsif user.present? && user.author?
         scope.where("published = true or author_id = ?", user.id)
-        # (scope.where(:published => true)) || (author_id == current_user.id)
       else
         scope.where(:published => true)
       end
@@ -40,8 +39,4 @@ class PostPolicy < ApplicationPolicy
   def publish?
     user && (user.editor?)
   end
-
-  # def publish?
-  #   (@post.published == true) || (user.editor? if user.present?)
-  # end
 end

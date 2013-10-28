@@ -10,9 +10,6 @@
   <%= @post.content %>
 </p>
 
-<!-- TODO: How do I get the @post.author.email to display correctly?
-      trying with this syntax gets a "undefined method `email' for nil:NilClass"
-      when rendering in the browser.  Interestingly, rake runs just fine -sprestage -->
 <p>
   <b>Author:</b>
   <%=  @post.author.email %>

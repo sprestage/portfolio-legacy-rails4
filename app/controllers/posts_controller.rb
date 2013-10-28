@@ -95,12 +95,4 @@ class PostsController < ApplicationController
 
     redirect_to posts_path
   end
-
-  # def publish
-  #   @post = Post.find(params[:id])
-  #   authorize @post, :update?
-  #   @post.publish!
-  #   redirect_to @post
-  # end
-
 end
