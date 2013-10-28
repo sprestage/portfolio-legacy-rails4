@@ -28,7 +28,10 @@
 <br />
 
 <div class="section-colored text-center">
-  <% if policy(post).create? %>
-    <%= link_to 'New Post', new_post_path %>
+  <% if current_user %>
+    <%= link_to 'New Post', new_post_path %> <br><br>
+    Logged in as <%= current_user.email %> <br>
+    <%= link_to "Sign Out", signout_path %>
   <% end %>
 </div>
+

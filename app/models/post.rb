@@ -3,6 +3,7 @@ class Post < ActiveRecord::Base
   attr_accessible :content, :title, :published
 
   belongs_to :author, class_name: "User"
+  # scope published, where(published: true)
 
   # TODO: we added this on Mon, 10/21. For learning about scope
   # belongs_to :author, class_name: "User"

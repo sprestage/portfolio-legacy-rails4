@@ -20,6 +20,9 @@
 
 <% if current_user %>
   Logged in as <%= current_user.email %>
+<% end %>
+
+<% if policy(@post).update? %>
   <%= link_to 'Edit', edit_post_path(@post) %>
 <% end %>
 

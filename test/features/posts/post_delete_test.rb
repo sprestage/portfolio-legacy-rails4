@@ -19,11 +19,9 @@ feature "deleting a post" do
     # Then I should receive a warning
     page.has_content?('Are you sure')
     # And the post is no longer present
-    # TODO: This won't check for anything meaningful.  Rewrite the final checking.
-    page.text.must_include 'November 2012'
-    page.text.must_include 'April 24-27 2013 - NorWesCon'
-    page.text.must_include 'foo'
-    page.wont_have_content 'GeekGirlCon'
+    page.text.must_include posts(:post01).title
+    page.text.must_include posts(:post02).title
+    page.wont_have_content "An unpublished post by an editor"
   end
 
   scenario "site visitor cannot delete posts, ever" do

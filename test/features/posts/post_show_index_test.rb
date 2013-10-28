@@ -12,7 +12,6 @@ feature "Show post index" do
     # And my unpublished posts
     page.text.must_include posts(:unPublishedPostByAuthor).title
     # But no unpublished posts that aren't mine
-    page.text.must_include "foo"
     page.wont_have_content posts(:unPublishedPostByEditor).title
   end
 
@@ -27,7 +26,6 @@ feature "Show post index" do
     # And all unpublished posts
     page.text.must_include posts(:unPublishedPostByAuthor).title
     page.text.must_include posts(:unPublishedPostByEditor).title
-    page.text.must_include "foo"
   end
 
   scenario "site visitor can only see the index of published posts" do
@@ -38,7 +36,6 @@ feature "Show post index" do
     page.text.must_include posts(:publishedPostByAuthor).title
     page.text.must_include posts(:publishedPostByEditor).title
     # But no unpublished posts
-    page.text.must_include "foo"
     page.wont_have_content posts(:unPublishedPostByAuthor).title
     page.wont_have_content posts(:unPublishedPostByEditor).title
   end
