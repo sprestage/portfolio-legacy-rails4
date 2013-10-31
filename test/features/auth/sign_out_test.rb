@@ -5,6 +5,7 @@ feature "As a visitor, I want to sign out when I'm done." do
     # Given a user is logged in
     visit root_path
     click_on 'Sign Up'
+    fill_in 'Username', with: 'user'
     fill_in 'Email', with: 'user@example.com'
     fill_in 'Password', with: '12341234'
     fill_in 'Password confirmation', with: '12341234'
@@ -21,7 +22,7 @@ feature "As a visitor, I want to sign out when I'm done." do
   scenario "signed in user is successfully signed out using fixtures" do
     # Given a user is logged in
     visit new_user_session_path
-    fill_in 'Email', with: users(:user_one).email
+    fill_in 'Login', with: users(:user_one).email
     fill_in 'Password', with: 'password'
     click_on 'Sign in'
     page.text.must_include "Signed in successfully"

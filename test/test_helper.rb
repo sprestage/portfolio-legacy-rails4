@@ -22,7 +22,7 @@ class ActiveSupport::TestCase
   # Add more helper methods to be used by all tests here...
   def sign_in
     visit new_user_session_path
-    fill_in 'Email', with: users(:user_one).email
+    fill_in 'Login', with: users(:user_one).email
     fill_in 'Password', with: "password"
     click_on 'Sign in'
     page.must_have_content "Signed in successfully"
@@ -30,7 +30,7 @@ class ActiveSupport::TestCase
 
   def sign_in_author
     visit new_user_session_path
-    fill_in 'Email', with: users(:author).email
+    fill_in 'Login', with: users(:author).email
     fill_in 'Password', with: "password"
     click_on 'Sign in'
     page.must_have_content "Signed in successfully"
@@ -38,7 +38,7 @@ class ActiveSupport::TestCase
 
   def sign_in_editor
     visit new_user_session_path
-    fill_in 'Email', with: users(:editor).email
+    fill_in 'Login', with: users(:editor).email
     fill_in 'Password', with: "password"
     click_on 'Sign in'
     page.must_have_content "Signed in successfully"
