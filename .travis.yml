@@ -17,3 +17,6 @@ deploy:
   app: sprestage-portfolio
   on:
     repo: sprestage/Portfolio
+run:
+  - "rake db:migrate"
+  - "rake db:fixtures:load"
