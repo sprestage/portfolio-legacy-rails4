@@ -1,29 +1,3 @@
-<div class="section-colored text-center">
-  <div id="top" class="header">
-    <h3><%= link_to "Posts", posts_path %></h3>
-    <h3><%= link_to "Projects", projects_path %></h3>
-  </div>
-
-  <h1>Hello Code Fellows!</h1>
-  <div class="container">
-    <div class="row">
-      <div class"col-lg-12">
-        <div id="user_header">
-          <div class="nav">
-            <!-- TODO: Remove this if..end once day 7 is complete. -->
-            <% if current_user %>
-              Logged in as <%= current_user.email %> <br>
-              <%= link_to "Sign Out", signout_path %>
-            <% end %>
-
-            <% if !current_user %>
-              <%= link_to "Sign In", new_user_session_path %> or
-              <%= link_to "Sign Up", new_user_registration_path %>
-            <% end %>
-          </div>
-        </div>
-      </div><!-- /.col -->
-    </div><!-- /.row  -->
-  </div><!-- /.container -->
-</div>
-
+<!-- Nothing here anymore.  Don't worry about it.  I may transfer a bunch from application.html later,
+  when/if I decide what I want to see on all pages vs just the landing page.  Keeping the 'yield' in
+  the application.html.erb as well.  -sprestage Nov 15, 2013. -->

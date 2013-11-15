@@ -19,4 +19,8 @@ Portfolio::Application.routes.draw do
   resources :projects
 
   root :to => 'home#index'
+
+  match ':action' => 'static#:action'  # replace 'match' with 'get' for rails4
+  get "static/construction"
+
 end
