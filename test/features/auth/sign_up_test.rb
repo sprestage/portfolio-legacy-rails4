@@ -3,7 +3,7 @@ require "test_helper"
 feature "As a visitor, I want to sign up as a new user so I can create and edit content." do
   scenario "new account is successfully created from root_path" do
     # Given a completed new user form
-    visit root_path
+    visit static_construction_path
     click_on 'Sign Up'
     # When I submit the form with valid data
     fill_in 'Username', with: 'user'
