@@ -53,7 +53,8 @@ is a link to the commits (to master, since there are no branches yet):
 - Assignment: https://canvas.instructure.com/courses/819381/assignments/2459531
 - Workflowy: https://workflowy.com/shared/294a15ce-d4e5-ea9f-297a-520ecb6fcf3e/
 
-
+---
+######Things I may want to add (November)
   * Polymorphic Comments https://workflowy.com/shared/131de828-e96a-3436-3f43-c5d066b2afd9/
 * Day 11:
   * Rails Resource Generator OmniAuth https://workflowy.com/shared/3c5aeda2-1eb3-e9d2-ac46-a3ddd5affc6c/
