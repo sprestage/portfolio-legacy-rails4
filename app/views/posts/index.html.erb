@@ -2,44 +2,31 @@
   <h1>Listing posts</h1>
 </div>
 <table>
-  <tr>
-    <th>Title</th>
-    <th>Content</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-  <% @posts.each do |post| %>
-    <tr id="<%= dom_id(post) %>">
-      <td><%= post.title %></td>
-      <td><%= post.content %></td>
-      <td><%= link_to 'Show', post %></td>
-
-      <% if policy(post).update? %>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-      <% end %>
-
-      <% if policy(post).destroy? %>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      <% end %>
-
-      <% if policy(post).publish? %>
-        <% if post.published? %>
-          <td><%= link_to 'Unpublish', publish_post_path(post), {method: :put} %></td>
-        <% else %>
-          <td><%= link_to 'Publish', publish_post_path(post), {method: :put} %></td>
-        <% end %>
-      <% end %>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th></th>
+      <th></th>
+      <th></th>
     </tr>
-  <% end %>
+  </thead>
+
+  <tbody class="posts" id="all_posts">
+    <% @posts.each do |post| %>
+      <%= render "post", post: post %>
+    <% end %>
+  </tbody>
 </table>
 
 <br />
 
 <div class="section-colored text-center">
+  <% if policy(Post).create? %>
+    <%= link_to 'New Post', new_post_path, id: "new_post_link", remote: true %> <br><br>
+  <% end %>
+
   <% if current_user %>
-    <%= link_to 'New Post', new_post_path %> <br><br>
     Logged in as <%= current_user.email %> <br>
     <%= link_to "Sign Out", signout_path %>
   <% end %>

@@ -23,5 +23,7 @@
 
 # Uncomment this in a couple days.  Sharing the data with CodeFellows for now.
 /coverage
+/coverage/*
+/coverage/.*
 
 /test/features/.DS_Store
