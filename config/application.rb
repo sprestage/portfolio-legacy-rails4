@@ -68,6 +68,8 @@ module Portfolio
     # Disable database initialization for Heroku deploy
     config.assets.initialize_on_precompile = false
 
+    config.assets.paths << Rails.root.join("vendor", "assets", "fonts")
+
     # To play around with these settings, use generate and destroy to create and destroy
     #   controllers/helpers/etc for learning. --pretend flag can give you a preview.
     #   eg.  rails generate controller Home --pretend

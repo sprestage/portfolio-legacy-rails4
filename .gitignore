@@ -27,3 +27,4 @@
 /coverage/.*
 
 /test/features/.DS_Store
+/vendor/assets/.DS_Store
