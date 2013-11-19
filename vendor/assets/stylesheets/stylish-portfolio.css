@@ -156,7 +156,7 @@ i.service-icon:hover {
   display: table;
   height: 400px;
   width: 100%;
-  background: url(<img src="https://s3-us-west-2.amazonaws.com/sprestageportfolio/section-two.JPG) no-repeat center center fixed;
+  background: url(https://s3-us-west-2.amazonaws.com/sprestageportfolio/section-two.JPG) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
