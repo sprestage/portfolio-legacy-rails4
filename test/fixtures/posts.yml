@@ -1,48 +1,48 @@
 # Create some data for the tests to use.
 
-post01:
+post01:  # //*[@id="post_90748361"]
  title: November 2012
  content: This is a sample blog post.
  author: user_one
  published: true
 
-post02:
+post02: #<tr id="post_476177525">
  title: April 24-27 2013 - NorWesCon
  content: This is another sample blog post.
  author: user_one
  published: true
 
-post03:
+post03:  # //*[@id="post_728159464"]
  title: May 26-27 2013 - She's Geeky un-conference
  content: This is yet another sample blog post.
  author: user_two
  published: true
 
-post04:
+post04: # //*[@id="post_889340231"]
  title: October 19-20 2013 - GeekGirlCon
  content: Still another sample blog post.
  author: author
  published: true
 
-publishedPostByAuthor:
+publishedPostByAuthor:  # //*[@id="post_270183853"]
  title: A published post by an author
  content: Some content
  author: author
  published: true
 
-unPublishedPostByAuthor:
+unPublishedPostByAuthor: # //*[@id="post_543653019"]
  title: An unpublished post by an author
  content: Some content
  author: author
  published: false
 
-publishedPostByEditor:
+publishedPostByEditor:  # //*[@id="post_558138588"]
  title: A published post by an editor
  content: Some more content
  author: editor
  published: true
 
-unPublishedPostByEditor:
+unPublishedPostByEditor:  # //*[@id="post_288970218"]
  title: An unpublished post by an editor
  content: Some more content
  author: editor
