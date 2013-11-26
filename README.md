@@ -5,8 +5,7 @@ is a showcase of my work and my capabilities.  This portfolios will grow as I im
 what I learn.  See other projects in my repository to see examples that don't fit in well
 in the context of my professional portfolio.
 
-[![Build Status](https://travis-ci.org/sprestage/Portfolio.png?branch=master)](https://travis-ci.org/sprestage/Portfolio)[![Code Climate](https://codeclimate.com/github/sprestage/Portfolio.png)](https://codeclimate.com/github/sprestage/Portfolio)[![Dependency Status](https://gemnasium.com/sprestage/Portfolio.png)](https://gemnasium.com/sprestage/Portfolio)
-
+[![Build Status](https://travis-ci.org/sprestage/Portfolio.png?branch=master)](https://travis-ci.org/sprestage/Portfolio)[![Code Climate](https://codeclimate.com/github/sprestage/Portfolio.png)](https://codeclimate.com/github/sprestage/Portfolio)
 
 Deployed
 ========
