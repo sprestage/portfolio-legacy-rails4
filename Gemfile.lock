@@ -33,7 +33,7 @@ GEM
     arel (3.0.3)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
-    bootstrap-sass (2.3.2.2)
+    bootstrap-sass (3.0.2.1)
       sass (~> 3.2)
     bootstrap-will_paginate (0.0.10)
       will_paginate
@@ -203,15 +203,15 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt-ruby
-  bootstrap-sass (~> 2.3.2.1)
+  bootstrap-sass
   bootstrap-will_paginate
-  coffee-rails (~> 3.2.1)
+  coffee-rails
   devise
   faker
   figaro
   jquery-rails
   launchy
-  minitest (> 4.0)
+  minitest
   minitest-colorize
   minitest-focus
   minitest-rails
@@ -225,7 +225,7 @@ DEPENDENCIES
   pundit
   rails (= 3.2.15)
   rails_12factor
-  sass-rails (>= 3.2)
+  sass-rails
   simplecov
   turn
-  uglifier (>= 1.0.3)
+  uglifier

@@ -11,11 +11,11 @@ gem 'pundit'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails', '>= 3.2' # sass-rails needs to be higher than 3.2
-  gem 'bootstrap-sass', '~> 2.3.2.1'
+  gem 'sass-rails' # sass-rails needs to be higher than 3.2
+  gem 'bootstrap-sass'
   gem 'bootstrap-will_paginate'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'coffee-rails'
+  gem 'uglifier'
 end
 
 group :production do
@@ -24,7 +24,7 @@ group :production do
 end
 
 group :development, :test do
-  gem 'minitest', '> 4.0'
+  gem 'minitest'
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
   gem 'launchy'
