@@ -5,7 +5,7 @@ is a showcase of my work and my capabilities.  This portfolios will grow as I im
 what I learn.  See other projects in my repository to see examples that don't fit in well
 in the context of my professional portfolio.
 
-[![Build Status](https://travis-ci.org/sprestage/Portfolio.png?branch=master)](https://travis-ci.org/sprestage/Portfolio)[![Code Climate](https://codeclimate.com/github/sprestage/Portfolio.png)](https://codeclimate.com/github/sprestage/Portfolio)[![Coverage Status](https://coveralls.io/repos/sprestage/Portfolio/badge.png)](https://coveralls.io/r/sprestage/Portfolio)[![Security Status](http://rails-brakeman.com/sprestage/Portfolio.png)](http://rails-brakeman.com/sprestage/Portfolio)[![endorse](https://api.coderwall.com/sprestage/endorsecount.png)](https://coderwall.com/sprestage)
+[![Build Status](https://travis-ci.org/sprestage/Portfolio.png?branch=master)](https://travis-ci.org/sprestage/Portfolio)[![Code Climate](https://codeclimate.com/github/sprestage/Portfolio.png)](https://codeclimate.com/github/sprestage/Portfolio)[![Coverage Status](https://coveralls.io/repos/sprestage/Portfolio/badge.png)](https://coveralls.io/r/sprestage/Portfolio)<!-- [![Security Status](http://rails-brakeman.com/sprestage/Portfolio.png)](http://rails-brakeman.com/sprestage/Portfolio) -->[![endorse](https://api.coderwall.com/sprestage/endorsecount.png)](https://coderwall.com/sprestage)
 
 Deployed
 ========
