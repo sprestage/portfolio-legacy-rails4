@@ -12,50 +12,48 @@ Deployed
 This portfolio has been deployed to Heroku and can be found here: http://sprestage-portfolio.herokuapp.com
 
 
-Day by Day
+Implementation
 =======
+(listed most recent to oldest)
 
-######October 24, 2013 (day 14)
+######Ajaxification
+- Added a use Ajax and jQuery to add a little fun to creating and destroying a post on the index page.
+
+######NewRelic
+- Set up NewRelic to ping my deployment at sprestage-portfolio.herokuapp.com
+to keep the dyno alive and my site loading quickly.
+
+######Authorship (has_many, :belongs_to)
 - Implement <b>authorship</b>.  This links posts to authors(users), using a one (belongs_to) to many (has_many) relationship.
 
-######October 23, 2013 (day 13)
-- Implement <b>user sign up, sign out, sign in</b> with Devise on personal Portfolio (Day 7: Rails Authentication with Devise)
+######Rails Authentication with Devise
+- Implement <b>user sign up, sign out, sign in</b> with Devise on personal Portfolio
 
-######October 21, 2013 (day 11)
-- Implement <b>show, show index, create, edit, delete projects</b> in personal Portfolio (Day 6: Rails MVC Breakdown)
+######Implement the Project resource
+- Implement <b>show, show index, create, edit, delete projects</b> in personal Portfolio.  Rails MVC Breakdown)
 
-######October 18, 2013 (day 10)
-- Implement Travis, postgres, and Heroku continuous integration on personal Portfolio and class project Trakehner DB.
+######PostgreSQL
+- Implement postgres locally because I think this is a better solution than SQLite
+and I would prefer to use in test and development the same environment that I
+am used in production.
 
-######October 17, 2013 (day 9)
-- Fighting with postgres
+######CI & Deployment
+- Implement Travis and Heroku continuous integration on personal Portfolio and class project Trakehner DB.
 
-######October 15, 2013 (day 7)
-- Finally finish implementing twitter bootstrap
+######Twitter Bootstrap
+- Write a test to check for bootstrap loading on root_path.
+- Used RailsCast #328-twitter-bootstrap-basics as a reference.
 
-######October 10, 2013 (day 4)
-- Write a spec to check for bootstrap loading on root_path.
-- Watch and do: http://railscasts.com/episodes/328-twitter-bootstrap-basics . Push your resulting app to Github.
-NOTE: This item was the screaming nightmare that caused so much trouble for the class.  No submission occurred for this item.
 - Implemented and mildly customized bootstrap.
-- Assignment: https://canvas.instructure.com/courses/819381/assignments/2459533
-- Workflowy: https://workflowy.com/shared/77df04e8-3c08-1031-fab9-472b482365ca/#
-QUESTION: Add additional spec that is modification of home page spec, but checks instead against your public domain name.  I had trouble with this.  I could see how to set up
-(free trial or paid) accounts on pingdom.com (to automate pinging of your site) and
-pingtest.net to ping the machine you are on right now.  But not how to set up my own
-test for this.
-- Implement <b>create, update, delete posts</b> in personal Portfolio, Day 3: Rails Resources
 
+######Testing with Minitest
+- Use generator to create minitests.
+- Implement fixtures.
 
-######October 9, 2013 (day 3)
-- This is the first big submission of my official Portfolio.  This implements the custom blog, where the posts can be created, updated, and deleted.  Use generator to create minitests.  Use scaffolding to generate posts.  Implement fixtures.  Day two submission
-is a link to the commits (to master, since there are no branches yet):
-- Assignment: https://canvas.instructure.com/courses/819381/assignments/2459531
-- Workflowy: https://workflowy.com/shared/294a15ce-d4e5-ea9f-297a-520ecb6fcf3e/
+######Implement the Post resource
+- Implement <b>create, update, delete posts</b> in personal Portfolio
+- Used scaffolding to generate posts.
 
----
-######Things I may want to add (November)
-  * Polymorphic Comments https://workflowy.com/shared/131de828-e96a-3436-3f43-c5d066b2afd9/
-* Day 11:
-  * Rails Resource Generator OmniAuth https://workflowy.com/shared/3c5aeda2-1eb3-e9d2-ac46-a3ddd5affc6c/
-  * Add Rails Authorization to Portfolio https://workflowy.com/shared/8b911380-129f-b3dc-fc22-c338c35d7f64/
+######Implement Portfolio Rails Application
+- This is the first big submission of my official Portfolio.  This implements the custom blog, where the posts can be created, updated, and deleted.
+
