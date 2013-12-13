@@ -5,7 +5,7 @@ is a showcase of my work and my capabilities.  This portfolios will grow as I im
 what I learn.  See other projects in my repository to see examples that don't fit in well
 in the context of my professional portfolio.
 
-[![Build Status](https://travis-ci.org/sprestage/Portfolio.png?branch=master)](https://travis-ci.org/sprestage/Portfolio)[![Code Climate](https://codeclimate.com/github/sprestage/Portfolio.png)](https://codeclimate.com/github/sprestage/Portfolio)[![Coverage Status](https://coveralls.io/repos/sprestage/Portfolio/badge.png)](https://coveralls.io/r/sprestage/Portfolio)[![Security Status](http://rails-brakeman.com/sprestage/portfolio.png)](http://rails-brakeman.com/sprestage/portfolio)[![endorse](https://api.coderwall.com/sprestage/endorsecount.png)](https://coderwall.com/sprestage)
+[![Build Status](https://travis-ci.org/sprestage/Portfolio.png?branch=master)](https://travis-ci.org/sprestage/Portfolio) [![Code Climate](https://codeclimate.com/github/sprestage/Portfolio.png)](https://codeclimate.com/github/sprestage/Portfolio) [![Coverage Status](https://coveralls.io/repos/sprestage/Portfolio/badge.png)](https://coveralls.io/r/sprestage/Portfolio) [![Security Status](http://rails-brakeman.com/sprestage/portfolio.png)](http://rails-brakeman.com/sprestage/portfolio) [![endorse](https://api.coderwall.com/sprestage/endorsecount.png)](https://coderwall.com/sprestage)
 
 Deployed
 ========
@@ -15,6 +15,10 @@ This portfolio has been deployed to Heroku and can be found here: http://spresta
 Implementation
 =======
 (listed most recent to oldest)
+
+######OmniAuth
+- Implement OmniAuth with twitter authentication.  Also, I want to add github
+auth to this later.
 
 ######Ajaxification
 - Added a use Ajax and jQuery to add a little fun to creating and destroying a post on the index page.
