@@ -45,6 +45,38 @@ feature "updating a post" do
     page.wont_have_content 'Edit'
   end
 
+  scenario "fail to update post, no title" do
+    # Given a post updated with no title (a logged in author)
+    sign_in_author
+    visit post_path(posts(:unPublishedPostByAuthor))
+    click_on 'Edit'
+    fill_in 'Title', with: ""
+    fill_in 'Content', with: "Different content"
+    # When I click edit and submit changed data
+    click_on 'Update Post'
+    # Then I should see error messages
+    page.text.must_include "Title can't be blank"
+    page.text.must_include "Title is too short"
+    # And no success message
+    page.wont_have_content 'Post was successfully updated'
+  end
+
+  scenario "fail to update post, no content" do
+    # Given a post updated with no content (a logged in author)
+    sign_in_author
+    visit post_path(posts(:unPublishedPostByAuthor))
+    click_on 'Edit'
+    fill_in 'Title', with: "A different title"
+    fill_in 'Content', with: ""
+    # When I click edit and submit changed data
+    click_on 'Update Post'
+    # Then I should see error messages
+    page.text.must_include "Content can't be blank"
+    page.text.must_include "Content is too short"
+    # And no success message
+    page.wont_have_content 'Post was successfully updated'
+  end
+
 ### TODO: broke this while ajaxifying the /posts page.  Need to fix.  Commenting
 ###  out for now, to get my portfolio site working again.  -sprestage 11/19/13
   # scenario "works with valid data" do
