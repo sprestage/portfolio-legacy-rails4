@@ -40,6 +40,32 @@ feature "Creating a post" do
     page.wont_have_content "New Post"
   end
 
+  scenario "create post must have title (must be signed in as author or editor)" do
+    # Given content but no title
+    sign_in_author
+    visit new_post_path
+    # When the form is submitted
+    fill_in "Content", with: posts(:post04).content
+    click_on "Create Post"
+    # Then some sort of error happens
+    page.text.must_include "Title can't be blank"
+    page.text.must_include "Title is too short"
+    page.wont_have_content "Post was successfully created"
+  end
+
+  scenario "create post must have content (must be signed in as author or editor)" do
+    # Given title but no content
+    sign_in_author
+    visit new_post_path
+    # When the form is submitted
+    fill_in "Title", with: posts(:post04).title
+    click_on "Create Post"
+    # Then some sort of error happens
+    page.text.must_include "Content can't be blank"
+    page.text.must_include "Content is too short"
+    page.wont_have_content "Post was successfully created"
+  end
+
 end
 
 
