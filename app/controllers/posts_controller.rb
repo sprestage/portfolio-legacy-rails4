@@ -53,12 +53,11 @@ class PostsController < ApplicationController
         current_user.posts << @post
         format.html { redirect_to posts_url, notice: 'Post was successfully created.' }
         format.json { render json: @post, status: :created, location: @post }
-        format.js
       else
         format.html { render action: "new" }
         format.json { render json: @post.errors, status: :unprocessable_entity }
-        format.js
       end
+      format.js
     end
   end
 
@@ -71,12 +70,11 @@ class PostsController < ApplicationController
       if @post.update_attributes(params[:post])
         format.html { redirect_to @post, notice: 'Post was successfully updated.' }
         format.json { head :no_content }
-        format.js
       else
         format.html { render action: "edit" }
         format.json { render json: @post.errors, status: :unprocessable_entity }
-        format.js
       end
+      format.js
     end
   end
 
