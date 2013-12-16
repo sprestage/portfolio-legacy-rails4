@@ -45,6 +45,15 @@ class ActiveSupport::TestCase
     click_on 'Sign in'
     page.must_have_content "Signed in successfully"
   end
+
+  def sign_out
+    visit static_construction_path
+    click_on 'Sign Out'
+    # Then I should see the logged out message
+    page.text.must_include "Signed out successfully"
+    page.wont_have_content "Sign Out"
+  end
+
 end
 
 class ActionDispatch::IntegrationTest
