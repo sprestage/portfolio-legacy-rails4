@@ -52,11 +52,33 @@ feature "Show post index" do
     page.text.must_include "Author:"
   end
 
+  scenario "editor can follow link for unpublished post in the index" do
+    # Given a logged in editor
+    sign_in_editor
+    visit posts_path
+    page.text.must_include posts(:unPublishedPostByAuthor).title
+    # When I click on someone else's published post
+    page.find(:xpath, '//*[@id="post_543653019"]').click_on "Show"
+    # Then I should see that post's show page
+    page.text.must_include "Content:"
+    page.text.must_include "Author:"
+  end
+
   scenario "editor can go to show page for published post" do
     # Given a logged in editor
     sign_in_editor
     # When I visit the show page for someone else's published post
     visit post_path(posts(:publishedPostByAuthor))
+    # Then I should see that post's show page
+    page.text.must_include "Content:"
+    page.text.must_include "Author:"
+  end
+
+  scenario "editor can go to show page for unpublished post" do
+    # Given a logged in editor
+    sign_in_editor
+    # When I visit the show page for someone else's published post
+    visit post_path(posts(:unPublishedPostByAuthor))
     # Then I should see that post's show page
     page.text.must_include "Content:"
     page.text.must_include "Author:"
