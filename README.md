@@ -16,9 +16,8 @@ Implementation
 =======
 (listed most recent to oldest)
 
-######OmniAuth
-- Implement OmniAuth with twitter authentication.  Also, I want to add github
-auth to this later.
+######Spork
+- Add Spork to start my tests more quickly.
 
 ######Ajaxification
 - Added a use Ajax and jQuery to add a little fun to creating and destroying a post on the index page.

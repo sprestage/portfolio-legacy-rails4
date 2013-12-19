@@ -92,7 +92,6 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    metaclass (0.0.1)
     method_source (0.8.2)
     mime-types (1.25.1)
     mini_portile (0.5.2)
@@ -115,8 +114,6 @@ GEM
       minitest-capybara (~> 0.4)
       minitest-metadata (~> 0.4)
       minitest-rails (~> 0.9.1)
-    mocha (0.14.0)
-      metaclass (~> 0.0.1)
     multi_json (1.8.2)
     newrelic_rpm (3.7.0.177)
     nokogiri (1.6.1)
@@ -125,7 +122,7 @@ GEM
       hashie (>= 1.2, < 3)
       rack
     orm_adapter (0.5.0)
-    pg (0.17.0)
+    pg (0.17.1)
     polyglot (0.3.3)
     pry (0.9.12.4)
       coderay (~> 1.0)
@@ -184,6 +181,9 @@ GEM
       simplecov-html (~> 0.8.0)
     simplecov-html (0.8.0)
     slop (3.4.7)
+    spork (0.9.2)
+    spork-minitest (0.0.3)
+      spork
     sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -202,7 +202,7 @@ GEM
     turn (0.9.6)
       ansi
     tzinfo (0.3.38)
-    uglifier (2.3.3)
+    uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     warden (1.2.3)
@@ -231,7 +231,6 @@ DEPENDENCIES
   minitest-focus
   minitest-rails
   minitest-rails-capybara
-  mocha
   newrelic_rpm
   omniauth
   pg
@@ -243,5 +242,6 @@ DEPENDENCIES
   rails_12factor
   sass-rails
   simplecov
+  spork-minitest
   turn
   uglifier

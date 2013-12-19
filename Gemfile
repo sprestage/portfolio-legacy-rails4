@@ -8,7 +8,6 @@ gem 'devise'
 gem 'omniauth'
 gem 'pundit'
 gem 'coveralls', require: false
-gem 'mocha', require: false
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -43,6 +42,8 @@ group :test do
   gem 'turn'
   gem 'simplecov', :require => false, :group => :test
 end
+
+gem 'spork-minitest'
 
 gem 'jquery-rails'
 
