@@ -16,8 +16,23 @@ Implementation
 =======
 (listed most recent to oldest)
 
+######Guard
+- Add Guard to run my tests automatically.
+- To run Guard, use the command line:
+<pre>
+  $> guard
+</pre>
+
 ######Spork
 - Add Spork to start my tests more quickly.
+- Must now run spork at the command line:
+<pre>
+  $> spork
+</pre>
+- To run the tests independently once spork is running, use the following syntax.
+<pre>
+  $> testdrb test/features/posts/*
+</pre>
 
 ######Ajaxification
 - Added a use Ajax and jQuery to add a little fun to creating and destroying a post on the index page.

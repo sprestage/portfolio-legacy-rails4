@@ -6,6 +6,7 @@ gem 'rails', '3.2.16'
 gem 'pg'
 gem 'devise'
 gem 'omniauth'
+gem 'omniauth-twitter'
 gem 'pundit'
 gem 'coveralls', require: false
 
@@ -36,6 +37,10 @@ group :development, :test do
   gem 'pry-debugger'
   gem 'faker'
   gem 'figaro'
+end
+
+group :development do
+  gem 'guard-minitest'
 end
 
 group :test do
