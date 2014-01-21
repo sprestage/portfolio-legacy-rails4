@@ -3,13 +3,20 @@
     <div id="sidebar-wrapper">
       <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-primary btn-lg pull-right toggle"><i class="icon-remove"></i></a>
-        <li class="sidebar-brand">Susan Prestage</li>
+        <li class="sidebar-brand" style="color:#666666">Susan Prestage</li>
         <li><a href="#top">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#blog">Blogs</a></li>
         <li><a href="#services">Skills</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#"><a href="/static/construction">Under Construction</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="http://resume.susanprestage.com">Resume</a></li>
+        <li><a href="/static/construction">Under Construction</a></li>
+      <% if !current_user %>
+        <li><a href="/users/sign_in">Log In</a></li>
+        <li><%= link_to "Sign in with Twitter", user_omniauth_authorize_path(:twitter) %>
+      <% end %>
+      <% if current_user %>
+        <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+      <% end %>
       </ul>
     </div>
     <!-- /Side Menu -->
