@@ -22,5 +22,6 @@ Portfolio::Application.routes.draw do
 
   match ':action' => 'static#:action'  # replace 'match' with 'get' for rails4
   get "static/construction"
+  get "static/resume"
 
 end
