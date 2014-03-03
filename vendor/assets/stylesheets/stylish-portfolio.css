@@ -110,7 +110,7 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url(https://s3-us-west-2.amazonaws.com/sprestageportfolio/Seattle_Center_as_night_falls.jpg) no-repeat center center fixed;
+  background: url(https://s3-us-west-2.amazonaws.com/sprestageportfolio/images_for_portfolio/Seattle_Center_as_night_falls.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -156,7 +156,7 @@ i.service-icon:hover {
   display: table;
   height: 400px;
   width: 100%;
-  background: url(https://s3-us-west-2.amazonaws.com/sprestageportfolio/section-two.JPG) no-repeat center center fixed;
+  background: url(https://s3-us-west-2.amazonaws.com/sprestageportfolio/images_for_portfolio/section-two.JPG) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
