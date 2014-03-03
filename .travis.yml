@@ -14,7 +14,7 @@ deploy:
   provider: heroku
   api_key:
     secure: RVoJVSJ2smDH1lWS7UZrrz7J1jMTE6O8fRZc73tpbMlXv8BxDZbuYmmGgrrFLxVK9Z/wy8T4iOFjJkMf/Z2oXvtJx3ZS+3Rkm+0Tj/AXMzkfFbDVu81/qI4qYShogyDizzKEKLVMAuQ8Btxfwng31kgtnvZ7ryjmigyU9Wubd4w=
-  app: sprestage-portfolio
+  app: susan-prestage-portfolio
   on:
     repo: sprestage/Portfolio
 run:
