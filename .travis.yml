@@ -9,14 +9,14 @@ script:
 - RAILS_ENV=test bundle exec rake db:migrate --trace
 - bundle exec rake db:test:prepare
 - bundle exec rake
-bundler_args: --binstubs=./bundler_stubs
+bundler_args: "--binstubs=./bundler_stubs"
 deploy:
   provider: heroku
   api_key:
-    secure: RVoJVSJ2smDH1lWS7UZrrz7J1jMTE6O8fRZc73tpbMlXv8BxDZbuYmmGgrrFLxVK9Z/wy8T4iOFjJkMf/Z2oXvtJx3ZS+3Rkm+0Tj/AXMzkfFbDVu81/qI4qYShogyDizzKEKLVMAuQ8Btxfwng31kgtnvZ7ryjmigyU9Wubd4w=
+    secure: jtqJadkYVUf17mjRGdMpFOZMr0CDauXYrFyodQ7pkVKSAMfDaHZ0EcIp95xaTk0H0BPOQVWbobkThFgzTJusvkF8DGtMpmaKVMqU+AXthqGb9L1Iz+Nv93S4y98Oeyg/m0fqBj6RsiZ8H+T3HiVr8gXuSXqwUEJyb/gDk2FN8Ek=
   app: susan-prestage-portfolio
   on:
     repo: sprestage/Portfolio
 run:
-  - "rake db:migrate"
-  - "rake db:fixtures:load"
+- rake db:migrate
+- rake db:fixtures:load
