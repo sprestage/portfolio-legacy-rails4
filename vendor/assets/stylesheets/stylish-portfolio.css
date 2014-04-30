@@ -163,6 +163,7 @@ i.service-icon:hover {
   background-size: cover;
 }
 
+
 /* Project */
 
 .project {
@@ -174,6 +175,34 @@ i.service-icon:hover {
 }
 
 .img-project {
+  margin: 0 auto;
+}
+
+
+/* Volunteer */
+
+.volunteer {
+  background: #7fbbda;
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.volunteer-item {
+  margin-bottom: 15px;
+}
+
+
+/* Speaking */
+
+.speaking {
+  padding: 50px 0;
+}
+
+.speaking-item {
+  margin-bottom: 15px;
+}
+
+.img-speaking {
   margin: 0 auto;
 }
 
