@@ -30,7 +30,7 @@ NewRelic configured to monitor and ping site to keep live (and not sleeping acco
 The Unofficial Trakehner Database, a Rails 4 application, Oct 2013 - present
 Collaborative pair project for Code Fellows Ruby on Rails bootcamp, with Nathaniel Barnes. A website for the Trakehner horse enthusiast, with emphasis for Trakehner breeders.
 
-Use of AWS for CNAME, DNS, and S3 hosting of the user uploadable horse images. Security concerns improved through use of Brakeman, keeping keys out of Github, and sanitizing user entered data before storage to database. Devise for authenitication. Pundit and Omniauth for authorization according to policies and roles. Gemnasium used to keep track of new gems. Added basic i18n support for German. Implemented tables using simple_form gem for simplicity and straightforwardness of page design.
+Use of AWS for CNAME, DNS, and S3 hosting of the user uploadable horse images. Security concerns improved through use of Brakeman, keeping keys out of Github, and sanitizing user entered data before storage to database. Devise for authentication. Pundit and Omniauth for authorization according to policies and roles. Gemnasium used to keep track of new gems. Added basic i18n support for German. Implemented tables using simple_form gem for simplicity and straightforwardness of page design.
 
 EXPERIENCE
 
