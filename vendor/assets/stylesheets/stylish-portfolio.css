@@ -122,18 +122,18 @@ body {
   padding: 50px 0;
 }
 
-/* Services */
-.services {
+/* Skills */
+.skills {
   background: #7fbbda;
   padding: 50px 0;
   color: #ffffff;
 }
 
-.service-item {
+.skill-item {
   margin-bottom: 15px;
 }
 
-i.service-icon {
+i.skill-icon {
   border: 3px solid #ffffff;
   border-radius: 50%;
   display: inline-block;
@@ -145,7 +145,7 @@ i.service-icon {
   text-align: center;
 }
 
-i.service-icon:hover {
+i.skill-icon:hover {
   font-size: 68px;
 }
 
