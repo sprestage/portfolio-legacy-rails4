@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 # Specify ruby version for Heroku deploy
 ruby '2.0.0'
 
-gem 'rails', '3.2.18'
+gem 'rails', '3.2.19'
 gem 'pg'
 gem 'devise'
 gem 'omniauth'
