@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Susan Prestage resume</title>
+  <meta name="author" content="Susan Prestage">
+
+  <!-- Stylesheet and defined styles are unique to my resume and not
+        found elsewhere on this portfolio site.  For this reason, I
+        felt it important to keep the styles defined within this
+        document.  Susan Prestage, January 2014. -->
+
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif:r,b,i,bi|Ubuntu:regular,b,i,bi&subset=Latin">
+
+  <style>
+    h1 {text-align:center;}
+    h1.droid {font-family:"Droid Serif",serif; font-weight:bold;}
+    h4 {text-align:center; line-height:0%;}
+    body {font-family:Ubuntu,sans-serif; margin:15px 25px; font-size:12px;}
+
+    p.names {padding: 0px 0px 0px 30px; float: left;
+      margin-bottom:-9px;}
+    p.dates {padding: 0px 30px 0px 0px; float: right;
+      margin-bottom:-9px; font-weight: bold;}
+    p.companies {padding: 10px 0px 8px 30px;}
+
+    p.summary {padding: 15px 20px 0px 30px;}
+
+    p.education {padding: 0px 0px 0px 30px; float: left; font-weight: bold;}
+    p.degree {padding: 0px 30px 0px 0px; float: right;}
+
+    div.objective {padding: 5px 30px 0px;}
+    div.skills {padding: 0px 60px 0px 60px; font-weight: bold;}
+    div.continuingeducation {padding: 0px 30px 0px;}
+
+    ul.details {padding: 0px 25px 0px 60px;}
+    ul.detailslast {padding: 0px 25px 10px 60px;}
+
+    div.space {padding: 0px 0px 1px 0px;}
+    div.about {padding: 0px 20px 0px 30px; text-align:center;}
+    div.hr {padding: 0px 15px 0px 15px;}
+  </style>
+</head>
+
+<body>
+  <h1 class="droid">Susan Prestage</h1>
+  <table width='100%'>
+    <tr>
+      <td width='35%' align="left"><a href="http://linkedin.com/in/susanprestage">linkedin.com/in/susanprestage</a></td>
+      <td width='30%'></td>
+      <td width='35%' align="right">susan.prestage@gmail.com</td>
+    </tr>
+    <tr>
+      <td width='35%' align="left"><a href="http://sprestage-portfolio.herokuapp.com">portfolio.susanprestage.com</a></td>
+      <td width='30%'></td>
+      <td width='35%' align="right">425-919-3122</td>
+    </tr>
+    <tr>
+      <td width='35%' align="left"><a href="http://github.com/sprestage">github.com/sprestage</a></td>
+      <td width='30%'></td>
+      <td width='35%' align="right"></td>
+    </tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+  </table>
+
+  <div class="hr">
+    <hr>
+  </div>
+  <div class="objective">
+    <p>Web developer with primary focus of Ruby on Rails. Years of industry experience in the development life cycle, designing, testing, and supporting software and hardware products. Specialist in UNIX environments and TCP/IP networking. I am happiest when deep in code or crafting from a command line.</p>
+  </div>
+
+
+  <div class="hr">
+    <hr>
+  </div>
+  <h4>SKILLS</h4>
+  <div class="skills">
+    <table width='100%'>
+      <tr>
+        <td width='20%'>Ruby</td>
+        <td width='30%'>JavaScript</td>
+        <td width='20%'>HTML5</td>
+        <td width='5%'>SQL</td>
+      </tr>
+      <tr>
+        <td width='20%'>Rails</td>
+        <td width='30%'>shell scripts</td>
+        <td width='20%'>CSS3</td>
+        <td width='5%'>TCP/IP</td>
+      </tr>
+    </table>
+  </div>
+
+
+  <div class="hr">
+    <hr>
+  </div>
+  <h4>CONTINUING EDUCATION</h4>
+  <div class="continuingeducation">
+    <p><b>Code Fellows:</b>&nbsp&nbsp
+    An 8 week intensive Ruby on Rails course with 4 hours of classroom study and 4+ hours of project work each day. I was one of 21 students selected from over 400, based on interviews, technical aptitude, and grit.  In addition to Ruby and Rails, we also used TDD, BDD, Postgres, Travis CI, Heroku, Github, HTML5, CSS3, Javascript, jQuery, Capybara, minitest, and many others.  Code Fellows alumni are trained to find resources and learn quickly.</p>
+  </div>
+
+
+  <div class="hr">
+    <hr>
+  </div>
+  <h4>PROJECTS</h4>
+  <p class="names"><a href="http://sprestage-portfolio.herokuapp.com"><b>Professional Portfolio</b></a>, a Rails 3 application</p>
+  <p class="dates">2013-2014</p>
+  <p class="summary" style="clear: both;">
+    A Ruby on Rails website showcasing the various full stack web developer skills gained through CodeFellows.  This Rails 3 application demonstrates my working knowledge of Ruby, HTML, CSS, Javascript, jQuery, Twitter Bootstrap, and many gems.</p>
+  <ul class="details">
+    <li>Set up continuous integration through Travis CI for automated testing (with Minitest) and subsequent deployment to Heroku.</li>
+    <li>Implemented Postgres for test, development, and production environments.</li>
+    <li>Attention paid to code coverage thanks to both CodeCoverage and SimpleCov.</li>
+    <li>Use and customization of Twitter Bootstrap for site personalization.</li>
+    <li>NewRelic configured to monitor and ping site to keep live (and not sleeping according Heroku default).</li>
+  </ul>
+
+  <p class="names"><a href="http://www.unofficialtrakehnerdatabase.com"><b>The Unofficial Trakehner Database</a></b>, a Rails 4 application</p>
+  <p class="dates">2013-2014</p>
+  <p class="summary" style="clear: both;">
+     Collaborative pair project for Code Fellows Ruby on Rails bootcamp, with Nathaniel Barnes.  A website for the Trakehner horse enthusiast, with emphasis for Trakehner breeders.</p>
+  <ul class="details">
+    <li>Use of AWS for CNAME, DNS, and S3 hosting of the user uploadable horse images.</li>
+    <li>Security concerns improved through use of Brakeman, keeping keys out of Github, and sanitizing user entered data before storage to database.</li>
+    <li>Devise for authentication.  Pundit and Omniauth for authorization according to policies and roles.</li>
+    <li>Gemnasium used to keep track of new gems.</li>
+    <li>Added basic i18n support for German.</li>
+    <li>Implemented tables using simple_form gem for simplicity and straightforwardness of page design.</li>
+    <li>Responsive design added for improved mobile experience.</li>
+  </ul>
+  <div class="space"></div>
+
+
+  <div class="hr">
+    <hr>
+  </div>
+  <h4>EMPLOYMENT</h4>
+  <p class="names"><b>DreamBox Learning</b></p>
+  <p class="dates">2010-2011</p>
+  <p class="summary" style="clear: both;">
+    <i>Adaptive learning, curriculum-based math lessons for kids, K-5, wrapped in a fun web-based environment environment environment environment.</i></p>
+  <ul class="details">
+    <li>Server and client testing in a Ruby on Rails environment.</li>
+    <li>Merged code fixes into the production branch using SVN (Subversion) and git.</li>
+    <li>Deployed fixes to production environment using Capistrano.</li>
+    <li>Used NewRelic and Splunk to monitor health of livesite and to troubleshoot livesite issues.</li>
+    <li>Used agile methods to release server features and fixes to production every 6-8 weeks.</li>
+    <li>Our team tested benchmarks and made changes to meet internal scalability, performance, and reliability goals to handle 10-100 times current traffic.</li>
+  </ul>
+
+  <p class="names"><b>Expedia</b></p>
+  <p class="dates">2006-2008</p>
+  <p class="summary" style="clear: both;">
+    <i>Back-end group responsible for payments and fraud.</i></p>
+  <ul class="details">
+    <li>Learned and heavily used SQL queries to confirm accuracy of data.</li>
+    <li>Tested i18n, internationalization.</li>
+    <li>Supported SSO (single sign-on) agent tool through two years of releases.</li>
+  </ul>
+
+  <p class="names"><b>Google via WorkForce Logic</b></p>
+  <p class="dates">2005-2006</p>
+  <p class="summary" style="clear: both;">
+    <i>Sitemaps group enables webmasters to publish lists of links from across their websites.</i></p>
+  <ul class="details">
+    <li>Agile team with a fast paced release schedule issuing multiple new features every six to eight weeks.</li>
+    <li>Automated the acceptance tests for new builds reducing time from 8 hours to 1 hour.</li>
+    <li>Automated further tests to cover the most critical (and fragile) areas of Google Sitemaps.</li>
+  </ul>
+
+  <p class="companies"><b>Also contributed to projects at Cisco, Cray, Aventail, and Microsoft</b></p>
+
+
+  <div class="hr">
+    <hr>
+  </div>
+  <h4>VOLUNTEER WORK</h4>
+  <p class="names"><b>RailsBridge</b>, TA</p>
+  <p class="dates">2014</p>
+  <p class="summary" style="clear: both;">
+    Free weekend workshops where women learn Ruby on Rails from volunteers. The students at RailsBridge workshops range from folks who are completely new to programming to QA engineers and professional developers who want to learn Rails. During the Installfest (usually on a Friday evening), Teachers and TAs get students' laptops setup with the requisite technologies. The next day, students break into small group based on experience level and build a web app!
+  </p>
+
+  <p class="names"><b>Ada Academy</b>, TA</p>
+  <p class="dates">2014</p>
+  <p class="summary" style="clear: both;">
+    Ada Developers Academy (Ada) is an intensive software developer training school for women, teaching full-stack web development. Students are learning Ruby, Rails, HTML/CSS, and JavaScript. Additionally, students are learning how to work on agile development teams, using pair programming, scrum, and test-driven development.
+  </p>
+
+
+  <div class="hr">
+    <hr>
+  </div>
+  <h4>FORMAL EDUCATION</h4>
+  <p class="education">University of California, Santa Cruz</p>
+  <p class="degree">BS Computer Engineering</p>
+  <p style="clear: both;"></p>
+
+
+  <div class="hr">
+    <hr>
+  </div>
+  <h4>ABOUT ME</h4>
+  <div class="about">
+    <p>I spend weekends on my horse ranch in North Bend, enjoying my horses, indulging my cats, gaming with my family, and learning about new things geeky and techy.</p>
+  </div>
+
+</body>
+</html>
