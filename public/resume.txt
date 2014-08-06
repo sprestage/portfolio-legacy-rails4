@@ -17,25 +17,25 @@ Project Skills: Agile development, object-oriented programming
 
 CONTINUING EDUCATION
 
-Code Fellows:   An 8 week intensive Ruby on Rails course with 4 hours of classroom study and 4+ hours of project work each day. I was one of 21 students selected from over 400, based on interviews, technical aptitude, and grit.
+Code Fellows, Ruby on Rails Dev Accelerator, Fall 2013
+An 8 week intensive Ruby on Rails course with 4 hours of classroom study and 4+ hours of project work each day. I was one of 21 students selected from over 400, based on interviews, technical aptitude, and grit. In addition to Ruby and Rails, we also used TDD, BDD, Postgres, Travis CI, Heroku, Github, HTML5, CSS3, Javascript, jQuery, Capybara, minitest, and many others. Code Fellows alumni are trained to find resources and learn quickly.
 
 PROJECTS
 
 Professional Portfolio, a Rails 3 application, Oct 2013 - present
 A Ruby on Rails website showcasing the various full stack web developer skills gained through CodeFellows. This Rails 3 application demonstrates my working knowledge of Ruby, HTML, CSS, Javascript, jQuery, Twitter Bootstrap, and many gems.
 
-Set up continuous integration through Travis CI for automated testing (with Minitest) and subsequent deployment to Heroku. Implemented Postgres for test, development, and production environments. Attention paid to code coverage thanks to both CodeCoverage and SimpleCov. Use and customization of Twitter Bootstrap for site personalization.
-NewRelic configured to monitor and ping site to keep live (and not sleeping according Heroku default).
+Set up continuous integration through Travis CI for automated testing (with Minitest) and subsequent deployment to Heroku. Implemented Postgres for test, development, and production environments. Attention paid to code coverage thanks to both CodeCoverage and SimpleCov. Use and customization of Twitter Bootstrap for site personalization. NewRelic configured to monitor and ping site to keep live (and not sleeping according Heroku default).
 
 The Unofficial Trakehner Database, a Rails 4 application, Oct 2013 - present
 Collaborative pair project for Code Fellows Ruby on Rails bootcamp, with Nathaniel Barnes. A website for the Trakehner horse enthusiast, with emphasis for Trakehner breeders.
 
-Use of AWS for CNAME, DNS, and S3 hosting of the user uploadable horse images. Security concerns improved through use of Brakeman, keeping keys out of Github, and sanitizing user entered data before storage to database. Devise for authentication. Pundit and Omniauth for authorization according to policies and roles. Gemnasium used to keep track of new gems. Added basic i18n support for German. Implemented tables using simple_form gem for simplicity and straightforwardness of page design.
+Use of AWS for CNAME, DNS, and S3 hosting of the user uploadable horse images. Security concerns improved through use of Brakeman, keeping keys out of Github, and sanitizing user entered data before storage to database. Devise for authentication. Pundit and Omniauth for authorization according to policies and roles. Gemnasium used to keep track of new gems. Added basic i18n support for German. Implemented tables using simple_form gem for simplicity and straightforwardness of page design. Responsive design added for improved mobile experience.
 
 EXPERIENCE
 
 DreamBox Learning, June 2010 - July 2011
-Server and client testing in a Ruby on Rails environment. Merged code fixes into the production branch using SVN (Subversion). Deployed fixes to production environment using Capistrano. Used NewRelic and Splunk to monitor health of livesite and to troubleshoot livesite issues. Used agile methods to release server features and fixes to production every 6-8 weeks. Worked as a team to ensure system designs met internal scalability, performance, and reliability goals of the ability to handle 10-100 times current traffic.
+Server and client testing in a Ruby on Rails environment. Merged code fixes into the production branch using SVN (Subversion). Deployed fixes to production environment using Capistrano. Used NewRelic and Splunk to monitor health of livesite and to troubleshoot livesite issues. Used agile methods to release server features and fixes to production every 6-8 weeks. Our team tested benchmarks and made changes to meet internal scalability, performance, and reliability goals to handle 10-100 times current traffic.
 
 Expedia, Dec 2006 - Sep 2008
 Learned and heavily used SQL queries to confirm accuracy of data. Tested i18n, internationalization. Supported SSO (single sign-on) agent tool through two years of releases.
