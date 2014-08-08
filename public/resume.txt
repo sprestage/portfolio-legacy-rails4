@@ -25,23 +25,24 @@ PROJECTS
 Professional Portfolio, a Rails 3 application, Oct 2013 - present
 A Ruby on Rails website showcasing the various full stack web developer skills gained through CodeFellows. This Rails 3 application demonstrates my working knowledge of Ruby, HTML, CSS, Javascript, jQuery, Twitter Bootstrap, and many gems.
 
-Set up continuous integration through Travis CI for automated testing (with Minitest) and subsequent deployment to Heroku. Implemented Postgres for test, development, and production environments. Attention paid to code coverage thanks to both CodeCoverage and SimpleCov. Use and customization of Twitter Bootstrap for site personalization. NewRelic configured to monitor and ping site to keep live (and not sleeping according Heroku default).
+Set up continuous integration through Travis CI for automated testing (with Minitest) and subsequent deployment to Heroku. Implemented Postgres for test, development, and production environments. Attention paid to code coverage thanks to both CodeCoverage and SimpleCov. Used and customized Twitter Bootstrap for site personalization. Configured NewRelic to monitor and ping site to keep live (and not sleeping according Heroku default).
+
 
 The Unofficial Trakehner Database, a Rails 4 application, Oct 2013 - present
 Collaborative pair project for Code Fellows Ruby on Rails bootcamp, with Nathaniel Barnes. A website for the Trakehner horse enthusiast, with emphasis for Trakehner breeders.
 
-Use of AWS for CNAME, DNS, and S3 hosting of the user uploadable horse images. Security concerns improved through use of Brakeman, keeping keys out of Github, and sanitizing user entered data before storage to database. Devise for authentication. Pundit and Omniauth for authorization according to policies and roles. Gemnasium used to keep track of new gems. Added basic i18n support for German. Implemented tables using simple_form gem for simplicity and straightforwardness of page design. Responsive design added for improved mobile experience.
+Used AWS for CNAME, DNS, and S3 hosting of the user uploadable horse images. Improved security concerns through use of Brakeman. Used Devise for authentication.  Pundit and Omniauth for authorization according to policies and roles. Kept gems current using Gemnasium. Added basic i18n support for German. Implemented tables using simple_form gem for simplicity and straightforwardness of page design. Added responsive design for improved mobile experience.
 
 EXPERIENCE
 
 DreamBox Learning, June 2010 - July 2011
-Server and client testing in a Ruby on Rails environment. Merged code fixes into the production branch using SVN (Subversion). Deployed fixes to production environment using Capistrano. Used NewRelic and Splunk to monitor health of livesite and to troubleshoot livesite issues. Used agile methods to release server features and fixes to production every 6-8 weeks. Our team tested benchmarks and made changes to meet internal scalability, performance, and reliability goals to handle 10-100 times current traffic.
+Server and client testing in a Ruby on Rails environment. Merged code fixes into the production branch using SVN (Subversion). Deployed fixes to production environment using Capistrano. Used NewRelic and Splunk to monitor health of livesite and to troubleshoot livesite issues. Used agile methods to release server features and fixes to production every 6-8 weeks. Worked as a team to test benchmarks and to make changes to meet internal scalability, performance, and reliability goals that handled 10-100 times existing traffic.
 
 Expedia, Dec 2006 - Sep 2008
 Learned and heavily used SQL queries to confirm accuracy of data. Tested i18n, internationalization. Supported SSO (single sign-on) agent tool through two years of releases.
 
 Google via WorkForce Logic, Oct 2005 - Oct 2006
-Agile team with a fast paced release schedule issuing multiple new features every six to eight weeks. Automated the acceptance tests for new builds reducing time from 8 hours to 1 hour. Automated further tests to cover the most critical (and fragile) areas of Google Sitemaps.
+Used agile methods to issuing multiple new features every six to eight weeks. Automated the acceptance tests for new builds reducing time from 8 hours to 1 hour. Automated further tests to cover the most critical (and fragile) areas of Google Sitemaps.
 
 Also contributed to projects at Cisco, Cray, Aventail, and Microsoft
 
