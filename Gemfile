@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 # Specify ruby version for Heroku deploy
-ruby '2.0.0'
+ruby '2.1.5'
 
-gem 'rails', '3.2.19'
+gem 'rails', '3.2.21'
 gem 'pg'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'pundit'
-gem 'coveralls', require: false
+gem 'coveralls', :require => false
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -31,10 +31,9 @@ group :development, :test do
   gem 'minitest-rails-capybara'
   gem 'launchy'
   gem 'minitest-focus'
-  gem 'minitest-colorize'
   gem 'pry-rails'
   gem 'pry-doc'
-  gem 'pry-debugger'
+  gem 'pry-byebug'
   gem 'faker'
   gem 'figaro'
 end
@@ -44,7 +43,6 @@ group :development do
 end
 
 group :test do
-  gem 'turn'
   gem 'simplecov', :require => false, :group => :test
 end
 
