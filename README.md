@@ -19,6 +19,9 @@ Implementation
 =======
 (listed most recent to oldest)
 
+######Mobile
+- Adapt site for a good mobile experience.
+
 ######Resume
 - Added a page and link for my resume.  Plenty of CSS to make it look exactly as I intend.
 
