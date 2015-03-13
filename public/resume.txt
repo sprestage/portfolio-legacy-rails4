@@ -36,6 +36,11 @@ Used AWS for CNAME, DNS, and S3 hosting of the user uploadable horse images. Imp
 
 EXPERIENCE
 
+workZeit, Sep 2014 - Mar 2015
+A SAAS web application that provides an innovative environment for teammates, managers, and companies to send and receive feedback. The service is notable for its extensive and sophisticated analytics tools provided to team managers and administrators. featherlight provides a better tool for improving one-on-one feedback and supporting the dreaded yearly review.
+
+Web development using Ruby in a Rails framework.  Very strong back end and SQL skills providing data to the front end.  DevOps for all deployments, bugs, and live site issues.  An agile, remote team with daily standups and two week sprints, using Skype, Trello, Slack, Github, and Heroku.  Use of JavaScript and Angular when help needed on front end.  Extensive refactoring of old code into code that is simple, readable, and easily modifiable.
+
 DreamBox Learning, June 2010 - July 2011
 Server and client testing in a Ruby on Rails environment. Merged code fixes into the production branch using SVN (Subversion). Deployed fixes to production environment using Capistrano. Used NewRelic and Splunk to monitor health of livesite and to troubleshoot livesite issues. Used agile methods to release server features and fixes to production every 6-8 weeks. Worked as a team to test benchmarks and to make changes to meet internal scalability, performance, and reliability goals that handled 10-100 times existing traffic.
 
