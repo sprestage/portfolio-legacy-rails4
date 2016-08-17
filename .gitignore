@@ -30,3 +30,5 @@
 /vendor/assets/.DS_Store
 
 .coveralls.yml
+
+/public/my-dev-notes.md

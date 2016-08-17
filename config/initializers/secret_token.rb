@@ -7,5 +7,11 @@
 Portfolio::Application.config.secret_token = if Rails.env.development? || Rails.env.test?
     ('x' * 30) # meets minimum requirement of 30 chars long
   else
-    ENV['RAILS_SECRET']
+    ENV['RAILS_SECRET_TOKEN']
+  end
+
+Portfolio::Application.config.secret_key_base = if Rails.env.development? || Rails.env.test?
+    ('x' * 30) # meets minimum requirement of 30 chars long
+  else
+    ENV['RAILS_SECRET_KEY_BASE']
   end

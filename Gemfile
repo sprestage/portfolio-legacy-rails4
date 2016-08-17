@@ -10,6 +10,8 @@ gem 'omniauth-twitter'
 gem 'pundit'
 gem 'coveralls', :require => false
 
+gem 'protected_attributes'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

@@ -12,7 +12,8 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    @project = Project.new(params[:project])
+    # @project = Project.new(params[:project])
+    @project = Project.new(params.require(:project).permit(:name, :technologies_used))
     if @project.save
       flash[:notice] = "Project was successfully created."
       redirect_to @project
