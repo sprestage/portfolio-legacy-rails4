@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
-  attr_accessible :content, :title, :published
+  # attr_accessible :content, :title, :published
 
   validates :title, :content, presence: true
   validates :title, length: { in: 2..255 }

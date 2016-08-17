@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
          :validatable, :omniauthable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :username, :email, :password, :password_confirmation, :remember_me, :login
+  # attr_accessible :username, :email, :password, :password_confirmation, :remember_me, :login
   attr_accessor :login
   # attr_accessible :title, :body
   has_many :posts, foreign_key: "author_id"

@@ -28,7 +28,6 @@ Spork.prefork do
   # require "minitest/rails/capybara"
 
   # Uncomment for awesome colorful output
-  require "minitest/colorize"
   require "minitest/pride"
 
   class ActionDispatch::IntegrationTest
