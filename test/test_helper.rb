@@ -12,7 +12,7 @@ Spork.prefork do
 
   formatters = [SimpleCov::Formatter::HTMLFormatter]
   formatters << Coveralls::SimpleCov::Formatter if ENV['COVERALLS_REPO_TOKEN']
-  SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[*formatters]
+  SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new
 
   SimpleCov.start 'rails'
 

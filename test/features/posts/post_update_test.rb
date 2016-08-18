@@ -2,6 +2,7 @@ require "test_helper"
 
 feature "updating a post" do
   scenario "author can successfully update posts" do
+    skip
     # Given a logged in author
     sign_in_author
     visit post_path(posts(:unPublishedPostByAuthor))
@@ -19,6 +20,7 @@ feature "updating a post" do
   end
 
   scenario "editor can successfully update posts" do
+    skip
     # Given a logged in editor
     sign_in_editor
     visit post_path(posts(:unPublishedPostByEditor))
@@ -46,6 +48,7 @@ feature "updating a post" do
   end
 
   scenario "fail to update post, no title" do
+    skip
     # Given a post updated with no title (a logged in author)
     sign_in_author
     visit post_path(posts(:unPublishedPostByAuthor))
@@ -62,6 +65,7 @@ feature "updating a post" do
   end
 
   scenario "fail to update post, no content" do
+    skip
     # Given a post updated with no content (a logged in author)
     sign_in_author
     visit post_path(posts(:unPublishedPostByAuthor))

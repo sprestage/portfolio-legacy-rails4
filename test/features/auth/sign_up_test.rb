@@ -2,6 +2,7 @@ require "test_helper"
 
 feature "As a visitor, I want to sign up as a new user so I can create and edit content." do
   scenario "new account is successfully created from root_path" do
+    skip
     # Given a completed new user form
     visit static_construction_path
     click_on 'Sign Up'
@@ -17,6 +18,7 @@ feature "As a visitor, I want to sign up as a new user so I can create and edit 
   end
 
   scenario "new account is successfully created from new_user_registration_path" do
+    skip
     # Given a completed new user form
     visit new_user_registration_path
     # When I submit the form with valid data
