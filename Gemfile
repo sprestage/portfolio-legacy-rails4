@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 # Specify ruby version for Heroku deploy
-ruby '2.1.5'
+ruby '2.2.1'
 
 gem 'rails', '4.2.7.1'
 gem 'pg'

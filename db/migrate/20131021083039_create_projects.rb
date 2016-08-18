@@ -4,7 +4,7 @@ class CreateProjects < ActiveRecord::Migration
       t.string :name
       t.string :technologies_used
 
-      t.timestamps
+      t.timestamps null: true
     end
   end
 end
