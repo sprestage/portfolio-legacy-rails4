@@ -2,13 +2,19 @@ source 'https://rubygems.org'
 # Specify ruby version for Heroku deploy
 ruby '2.1.5'
 
-gem 'rails', '4.1.16'
+gem 'rails', '4.2'
 gem 'pg'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'pundit'
 gem 'coveralls', :require => false
+
+# Rails 4.2 upgrade extracted respond_with and respond_to into the responders gem.
+gem 'responders', '~> 2.0'
+
+# Might need this for rails 4.2.
+# gem 'rails-deprecated_sanitizer'
 
 gem 'protected_attributes'
 
@@ -42,6 +48,11 @@ end
 
 group :development do
   gem 'guard-minitest'
+
+  # Simply drop a reference to the console helper (i.e., <%= console %>)
+  # into any view you want to enable it for. A console will also be
+  # provided on any error page you view in your development environment.
+  gem 'web-console', '~> 2.0'
 end
 
 group :test do

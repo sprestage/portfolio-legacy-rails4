@@ -32,5 +32,10 @@ Portfolio::Application.configure do
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
 
+  # Added in rails 4.2 to prepare for rails 5.
+  Rails.application.configure do
+  config.active_support.test_order = :sorted # or `:random` if you prefer
+end
+
   config.eager_load = false
 end

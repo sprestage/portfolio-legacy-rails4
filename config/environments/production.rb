@@ -33,6 +33,10 @@ Portfolio::Application.configure do
   # See everything in the log (default is :info)
   # config.log_level = :debug
 
+  # Set to `:info` to match the current default, or set to `:debug` to opt-into
+  # the future default.  Introduced in rails 4.2.
+  config.log_level = :info
+
   # Prepend all log lines with the following tags
   # config.log_tags = [ :subdomain, :uuid ]
 
