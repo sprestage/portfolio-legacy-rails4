@@ -9,12 +9,11 @@ script:
 - RAILS_ENV=test bundle exec rake db:migrate --trace
 - bundle exec rake db:test:prepare
 - bundle exec rake
-bundler_args: "--binstubs=./bundler_stubs"
 deploy:
   provider: heroku
   api_key:
     secure: jtqJadkYVUf17mjRGdMpFOZMr0CDauXYrFyodQ7pkVKSAMfDaHZ0EcIp95xaTk0H0BPOQVWbobkThFgzTJusvkF8DGtMpmaKVMqU+AXthqGb9L1Iz+Nv93S4y98Oeyg/m0fqBj6RsiZ8H+T3HiVr8gXuSXqwUEJyb/gDk2FN8Ek=
-  app: cedar-14-sprestage
+  app: new-sprestage-portfolio
   on:
     repo: sprestage/Portfolio
 run:
