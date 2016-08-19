@@ -1,14 +1,11 @@
 language: ruby
 rvm:
-- 2.2.1
+  - 2.2.1
 env:
-- DB=postgres
+  - DB=postgres
 before_script:
-- psql -c 'create database portfolio_test;' -U postgres
-script:
-- RAILS_ENV=test bundle exec rake db:migrate --trace
-- bundle exec rake db:test:prepare
-- bundle exec rake
+  - psql -c 'create database portfolio_test;' -U postgres
+
 deploy:
   provider: heroku
   api_key:
@@ -17,5 +14,5 @@ deploy:
   on:
     repo: sprestage/Portfolio
 run:
-- rake db:migrate
-- rake db:fixtures:load
+  - rake db:migrate
+  - rake db:fixtures:load

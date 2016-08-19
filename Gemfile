@@ -57,6 +57,7 @@ end
 
 group :test do
   gem 'simplecov', :require => false, :group => :test
+  gem 'rake'
 end
 
 gem 'spork-minitest'
