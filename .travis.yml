@@ -1,18 +1,17 @@
 language: ruby
 rvm:
-  - 2.2.1
+- 2.2.1
 env:
-  - DB=postgres
+- DB=postgres
 before_script:
-  - psql -c 'create database portfolio_test;' -U postgres
-
+- psql -c 'create database portfolio_test;' -U postgres
+run:
+- rake db:migrate
+- rake db:fixtures:load
 deploy:
   provider: heroku
   api_key:
-    secure: jtqJadkYVUf17mjRGdMpFOZMr0CDauXYrFyodQ7pkVKSAMfDaHZ0EcIp95xaTk0H0BPOQVWbobkThFgzTJusvkF8DGtMpmaKVMqU+AXthqGb9L1Iz+Nv93S4y98Oeyg/m0fqBj6RsiZ8H+T3HiVr8gXuSXqwUEJyb/gDk2FN8Ek=
-  app: new-sprestage-portfolio
+    secure: LoFBE9Wz9SsrJ3pMyVsQIf3T7vdlfvWDu/9h5qIoogi/QFyBtY8NPAQn7zSVlajU5mLdR8ngVNUHpoo4MXUvr9G2m0RhBUM1wUXxkFHSYY5W01BhItOj1oDu/LvMqtTH5bvo07MnuCYD0Wa+XlXucuJS2INW2eip1p0+HIAz8zQ=
+  app: Portfolio
   on:
     repo: sprestage/Portfolio
-run:
-  - rake db:migrate
-  - rake db:fixtures:load
